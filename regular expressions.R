@@ -6,7 +6,7 @@ library(purrr)
 
 # Reading in the raw COSMAS file
 # FIXME  add encoding options "latin1" and "UTF-8"
-raw.file <- read_file("test6.TXT", locale(encoding="latin1"))
+raw.file <- read_file("test.txt", locale(encoding="latin1"))
 
 # Metadata ----------------------------------------------------------------
 # Save COSMAS version 
@@ -19,7 +19,7 @@ sections <- raw.file %>%
   str_split("\\_{80}")
 
 # Save export date
-export_date <- sections[[1]][2] %>%
+Export_Date <- sections[[1]][2] %>%
                 str_extract(regex("(?<=\\n\\nDatum).+(?=\\nArchiv)")) %>%
                 str_extract(regex("(?<=:\\s)(.*)$"))
 # Save the search phrase
@@ -37,37 +37,40 @@ text_parts <- all_sentences %>%
 data <- data.frame(Sources = text_parts[[1]][,5])
 
 # Tokens
-data$Token <- text_parts[[1]][,3]
+data$Token <- text_parts[[1]][,3] %>%
+  str_trim()
 
 # Context sentence BEFORE token sentence
 data$Precontext <- text_parts[[1]][,2] %>%
   str_extract_all(boundary("sentence")) %>%
   map(function(x) {nth(x,-2)} ) %>%
+  str_trim() %>%
   unlist()
 
 # Sentence part BEFORE token
 data$Prehit <- text_parts[[1]][,2] %>%
   str_extract_all(boundary("sentence")) %>%
   map(last) %>%
+  str_trim() %>%
   unlist()
 
 # Sentence part AFTER token
 data$Posthit <- text_parts[[1]][,4] %>%
   str_extract_all(boundary("sentence")) %>%
   map(first) %>%
+  str_trim() %>%
   unlist()
 
 # Extract context sentence AFTER token sentence
 data$Postcontext <- text_parts[[1]][,4] %>%
   str_extract_all(boundary("sentence")) %>%
   map(function(x) {nth(x,2)} ) %>%
+  str_trim() %>%
   unlist()
 
 # Creating data frame for export ------------------------------------------
-# Adding metadata (COSMAS API version and export date)
-data$C2API_Version <- C2API_Version
-data$Export_Date <- export_date
-
 data <- data %>%
   unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
-  select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext)
+  mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
+  select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
+  replace_na(" ")
