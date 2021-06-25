@@ -1,0 +1,434 @@
+© Leibniz-Institut für Deutsche Sprache, Mannheim
+COSMAS II-Server, C2API-Version 4.20.4 - 07.06.2021
+________________________________________________________________________________
+
+Datum         : Mittwoch, den 23. Juni 2021, 23:08:11
+Archiv        : W - Archiv der geschriebenen Sprache
+Korpus        : W-öffentlich - alle öffentlichen Korpora des Archivs W (mit Neuakquisitionen)
+Archiv-Release: Deutsches Referenzkorpus DeReKo-2021-I
+Suchanfrage   : Mond*
+Suchoptionen  : Ei+Ri+Di, Flex
+Ergebnis      : 129.423 Treffer
+
+
+KWIC (unsortiert)
+
+Anz. Treffer           : 129.423
+Anz. exportierte Zeilen: 100 (Exportoption)
+Angezeigter Kontext    : 0 Sätze links, 0 Sätze rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+A09    Die Bauarbeiten werden sich über einen <B>längeren</> Zeitraum erstrecken; das Unternehmen
+A97                                                           Wenn der <B>Mond</> dann um etwa 17 Uhr in den Widder eintritt, ist man nicht mehr ganz
+A97                                                    Dann trifft der <B>Mond</> auf Saturn, der für Pflicht und Arbeit steht, und dann sinkt auch
+A97                                                                    <B>Mond:</> Neumond ist in diesem Monat am sechsten.
+A97                                    Im ersten Viertel sehen wir den <B>Mond</> am 14., der Vollmond strahlt am 22. Schliesslich befindet er sich
+A97          ist ein Exponat vom 12. Juli 1969, das zu einer Fahrt zum <B>Mond</> via Gurten berechtigt.
+A97   «Der fliegende Rittmeister» von Hermann Dostal, im Lied «Mann im <B>Mond»</> von Tobias Künzel und im «Ol' Man River» aus dem Musical
+A97                                         Am Sonntagmorgen gerät der <B>Mond</> kurzfristig in einen kritischen Kontakt mit Saturn: Da reagiert man
+A97  Abend in dieser Veranstaltungs-Reihe stand unter dem Motto «Unser <B>Mond».</>
+A97                                                          stahl dem <B>Mond</> die
+A97                                        Eine «Feuerkugel» stahl dem <B>Mond</> die «Show»
+A97     dem Motto der Sternwarte der Kantonsschule: «Take a look.» Der <B>Mond</> steht im Mittelpunkt des ersten Abends im Rahmen der laufenden
+A97                                                                Den <B>Mond</> in «Griffweite»
+A97                                                                Der <B>Mond</> - oder «dä Moo», wie ihn Kantonsschullehrer Fritz Schocher zuvor in
+A97 war es auch nur ein kleiner Meteor - auf jeden Fall hat dieser dem <B>Mond</> für einmal die «Show» gestohlen.
+A97                                        Auch am 18. August soll der <B>Mond</> aufgehen: Der Chor der Musikschule Herisau (Leitung: Roman
+A97          von Auto und Flugzeug, und zuletzt flog man sogar auf den <B>Mond,</> von wo aus die Astronauten so deutlich mit Präsident Nixon
+A97                                      Auch der erste Mensch auf dem <B>Mond</> habe sich die Erde anders vorgestellt, wurde berichtet.
+A97 Trotzdem sollte man aktiv sein: Wenn am späteren Freitag abend der <B>Mond</> in den Widder wechselt, ist der Zeitpunkt ideal, um sich ins
+A97                 Und wenn von morgen Mittwoch bis Freitagmittag der <B>Mond</> durch die Zwillinge wandert, bekommt man noch zusätzliche
+A97 Mittwoch gibt es zwar kurzfristig eine kritische Konstellation von <B>Mond</> und Pluto: dann können unverdaute Gefühle nochmals hochkommen.
+A97   spürbar wird das aber vielleicht erst ab Freitagmittag, wenn der <B>Mond</> die Zwillinge verlässt und ebenfalls in den Krebs tritt.
+A97                                          Dann treffen sich nämlich <B>Mond</> und Venus im Krebs: Das ist ein vielversprechender Abend, ganz
+A97                                                           Weil der <B>Mond</> aber nicht sichtbar ist, kann man diese spezielle Stimmung leider
+A97                                          Wenn sich am Samstagabend <B>Mond</> und Saturn verbinden, könnte ein solcher Rückzugsmoment eintreten,
+A97     Und nebst dieser wurde schliesslich auch noch das Gedicht «Der <B>Mond</> ist aufgegangen» von Mathias Claudius vorgetragen.
+A97   folgt auf «Die Perle» «Pflicht und Liebe», weiter kommen «An den <B>Mond</> (Was schauest du so hell)», «Mignon (So lass mich erscheinen, bis
+A97                                                     So nah wie der <B>Mond</> kommt uns kein anderer Himmelskörper.
+A97                                Chronobiologen untersuchen, wie der <B>Mond</> die Organismen der Erde beeinflusst - auch den Menschen
+A97     wenn auch in der Regel sehr unauffällige Weise beeinflusst der <B>Mond</> das Leben auf der Erde.
+A97   sich den rhythmischen Abläufen in der Natur widmet, hat auch den <B>Mond</> seit langem als einen Faktor ins Auge gefasst.
+A97     Es ist dies nur ein Beispiel für die vielen Einflüsse, die vom <B>Mond</> ausgehen.
+A97                                    Auch die Honigbiene «kennt» den <B>Mond:</> Sie fliegt am aufgeregtesten an Tagen des Vollmondes, wenn die
+A97  nicht zu kaltem, aber wolkigen Wetter, in der Nacht, und wenn der <B>Mond</> im dritten Viertel stand.
+A97      Merkur steht dann in den Zwillingen in Spannung mit Pluto und <B>Mond.</>
+A97         Entscheidungen bis zum Donnerstag zu warten, weil dann der <B>Mond</> harmonisch steht und die exakte Sonne-Jupiter-Konstellation
+A97                                    Ein disharmonischer Kontakt von <B>Mond</> und Venus macht es nicht leicht, unterschiedliche Bedürfnisse unter
+A97         und Tiroler Volkskundlerin Johanna Paungger weiss über den <B>Mond</> und seine Einflüsse auf den Menschen zu berichten.
+A97    zu einem Sprechchor von Wladimir Vogel, dem neckischen «Mann im <B>Mond»</> der deutschen Gruppe «Die Prinzen» und John Cages «4 Minuten 33
+A97                                                       Noch ist der <B>Mond</> im Widder, was auf Dynamik und Unternehmenslust deutet.
+A97                                               Am Sonntag steht der <B>Mond</> dann im Stier in angespannter Verbindung mit Venus und Uranus - das
+A97                                                                Der <B>Mond</> tritt in den Krebs und steht dort am Freitag in Spannung mit Mars.
+A97                                                    Wenn am Sonntag <B>Mond</> und Venus im Löwen und Uranus in Spannung stehen, bekommen Gefühle
+A97                    Ausserdem ist er für die Erdenbewohner nach dem <B>Mond</> der nächste Himmelskörper, auf dem Astronauten landen könnten.
+A97                                                        Während der <B>Mond</> in der Waage und die Venus im Löwen Lebensfreude und Toleranz
+A97                                          Am Sonntagabend, wenn der <B>Mond</> bei Uranus im Wassermann steht, kann sich denn auch schon wieder
+A97 Appenzeller Kalender nun Auskunft, in welchem Tierkreiszeichen der <B>Mond</> steht.
+A97                                            Ein Beispiel: Steht der <B>Mond</> am Samstag, 9. Mai 1998, im Zeichen der Waage oder des Krebses?
+A97                                                          Steht der <B>Mond</> am gleichen Ort im Tierkreis wie die Sonne am kürzesten Tag, so ist
+A97                                                                Der <B>Mond</> steht tief über dem Südhorizont und steigt nun täglich, er läuft
+A97                                     Allerdings nur bei zunehmendem <B>Mond</> sollten die Haare geschnitten werden.
+A97                          Bei «nidsigend», aber nur bei abnehmendem <B>Mond</> soll das Bauholz für ein Haus geschlagen werden.
+A97                                                     «Nidsigehender <B>Mond»</>
+A97                                       «Natürlich bei nidsigehendem <B>Mond,</> wie es eben bei traditionsbewussten Holzern noch üblich sei,
+A97  ihren stolzen, steil aufragenden Felsen verbirgt sich ein scheuer <B>Mond.</>
+A97    die gewünschte Stimmungsverbesserung, doch wenn am Mittwoch der <B>Mond</> in den Löwen wechselt, hat man bereits wieder mehr Energie und ist
+A97                           Und bald steiget herauf vom Capitole der <B>Mond.</>
+A97             Knochige Indianergesichter, gefärbte Bisonschädel, den <B>Mond</> anheulende Wölfe, einzigartige Ledergürtel in allen vorstellbaren
+A97                                                Wenn am Sonntag der <B>Mond</> im Skorpion und der Mars in kritischer Position steht, können
+A97                                                               «Der <B>Mond</> schien hell.. ., Sie wissen ja, wie das ist», sagte Redman
+A97                                                  «Dieser verdammte <B>Mond</> verschwand hinter eine Wolke, und ich konnte nicht die Spur sehen.»
+A97          wie zum Beispiel das von der Mondschaft, oder dem Mann im <B>Mond.</>
+A97          wie zum Beispiel das vom dem Mondschaft, oder dem Mann im <B>Mond.</>
+A97   der Freilicht-Kino-Veranstaltung, strahlt Rohy Batliwala mit dem <B>Mond</> am Abendhimmel um die Wette.
+A97  dass damit ein ruhiges Wochenende bevorsteht, zumal sich auch der <B>Mond</> in diesen zwei Tagen im beständigen Stier aufhält.
+A97                                     Der Kalender zeigt an, wie der <B>Mond</> Pflege und Wachstum von Zier- und Nutzpflanzen beeinflusst.
+A97   Franz Schubert, in einem seiner befremdlichsten Lieder «Grab und <B>Mond»</> anruft.
+A97                             Von Freitagabend bis Sonntag steht der <B>Mond</> im Löwen, und das ist gut, weil es die Lebenslust, den Tatendrang
+A97                                                                Der <B>Mond</> scheint goldorange über die Dächer der Badhütte und spiegelt sich
+A97  waren bereits mit ihrem ersten gemeinsamen Programm «Ja, wenn der <B>Mond..</> .» Gäste von «Open opera»; vor vollbesetzter
+A97                           Rechtzeitig aufs Wochenende wechselt der <B>Mond</> am Samstag morgen vom Steinbock in den Wassermann, und das
+A97                               Nach dem verlorenen Wettlauf auf den <B>Mond</> begann die damalige Sowjetunion mit der Realisierung eines
+A97                                                                Der <B>Mond</> bewegt seit jeher das Gemüt der Menschen.
+A97                       In allen literarischen Epochen erscheint der <B>Mond</> immer wieder in den verschiedensten poetischen Landschaften.
+A97                                                                Der <B>Mond</> soll nach Prognosen der Fachleute während dessen einen rötlichen
+A97                               Die Erde ist viermal grösser als der <B>Mond.</>
+A97                                                                Der <B>Mond</> ist scheinbar gleich gross wie die Sonne, da diese 400mal grösser,
+A97  400mal grösser, aber im Mittel 390mal weiter von der Erde als der <B>Mond</> entfernt ist.
+A97 Bei einer totalen Mondfinsternis steht die Erde zwischen Sonne und <B>Mond</> auf einer Linie und wirft einen Schatten auf den Mond, der breiter
+A97    Sonne und Mond auf einer Linie und wirft einen Schatten auf den <B>Mond,</> der breiter als der Monddurchmesser ist.
+A97                                                          Steht der <B>Mond</> zwischen Sonne und Erde, wie dies bei der Sonnenfinsternis der Fall
+A97                                                                Der <B>Mond</> bewegt sich von der Erde weg.
+A97      Ausserdem können wir heute exakt messen, wie schnell sich der <B>Mond</> von der Erde entfernt.
+A97    Denn seit der ersten Mondlandung 1969 steht ein Spiegel auf dem <B>Mond,</> der jeweils jene Laserstrahlen auf die Erde reflektiert, die von
+A97   Laserstrahlen auf die Erde reflektiert, die von der Erde auf den <B>Mond</> gesandt wurden.
+A97                                             Theoretisch müsste der <B>Mond</> während der Finsternis völlig dunkel erscheinen.
+A97                              Fachleute sagen aber voraus, dass der <B>Mond</> während der Finsternis in einem grünlich-roten Schimmer liegt.
+A97                                                           Wenn der <B>Mond</> dann aber am Samstag abend dem Mars gegenüber steht, versetzt ihm
+A97                                     Am Sonntag morgen wechselt der <B>Mond</> dann ins kontaktfreudige Sternzeichen Zwillinge, und damit ist ein
+A97    hoffenden Kind auf der toten Erde unterm toten Himmel und einem <B>Mond</> wie «faul Holz».
+A97                              Mit dem zum Volkslied gewordenen «Der <B>Mond</> ist aufgegangen» von Matthias Claudius mit der vom Dirigenten
+A97 ab Ramsten begann an einem schönen Abend, und bald schon waren der <B>Mond</> und die Sterne Begleiter der Turnerschar.
+A97                                                                    <B>Mond:</> Am 1. und 31. Oktober ist Neumond.
+A97        ist in diesem Monat am 16. Am 15. Oktober befindet sich der <B>Mond</> ganz nahe (zwei Vollmondbreiten) beim Planeten Saturn.
+A97   den Ring-planeten am Himmel bisher nicht gefunden haben, ist der <B>Mond</> ein auffälliger Wegweiser.
+A97      nämlich morgen abend ein Neumond statt, das heisst, Sonne und <B>Mond</> stehen dann zusammen in der Waage.
+A97   24 Kinder eine Woche mit dem peruanischen Märchen von «Sonne und <B>Mond»</> und erleben den Wind der Anden.
+A97 einen Wortgottesdienst mit dem peruanischen Märchen von «Sonne und <B>Mond»,</> das im Gegensatz zu deutschen Volksmärchen kein «happy end»
+A97 der Hütte stehen sieht, wirft er ihr sein Herz zu, das sich in den <B>Mond</> verwandelt.
+A97                                                      Wenn sich der <B>Mond</> in ihm spiegelt, sind die Liebenden für kurze Zeit vereint.
+A97     zum «Gegenschlag» aus, indem sie eine bemannte Landung auf dem <B>Mond</> noch vor dem Jahr 1970 zu ihrem Ziel erklärten.
+
+
+Belege (unsortiert)
+
+Anz. Treffer           : 129.423
+Anz. exportierte Belege: 100 (Exportoption)
+Angezeigter Kontext    : 1 Satz links, 1 Satz rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+Herisau: Das grösste Projekt ist der Metrohm-Neubau im Hölzli, wo für 100 Mio. Franken zwischen Huber+Suhner und Eisenbahnbrücke rund 40 000 m² verbaut werden. Die Bauarbeiten werden sich über einen <B>längeren</> Zeitraum erstrecken; das Unternehmen wird voraussichtlich Ende 2010 von der Oberdorfstrasse ins Hölzli umziehen.
+Die Huber Fenster AG investiert an der St. Gallerstrasse 4,5 Mio. Franken in die Betriebserweiterung. (A09/JAN.00001 St. Galler Tagblatt, 03.01.2009, S. 31; Firmen investieren Millionen)
+
+Während der Geist verschwommen ist, sind die Gefühle und die Sensitivität aber um so stärker, vor allem unter dem Fische-Mond bis am späten Samstagnachmittag. Wenn der <B>Mond</> dann um etwa 17 Uhr in den Widder eintritt, ist man nicht mehr ganz so empfindlich und verspürt wieder etwas mehr Tatendrang. Wer arbeiten muss, sollte das am späten Sonntagnachmittag tun. (A97/APR.01173 St. Galler Tagblatt, 29.04.1997, Ressort: TB-VGN (Abk.); ebt ae, unu lengen)
+
+ Wer arbeiten muss, sollte das am späten Sonntagnachmittag tun. Dann trifft der <B>Mond</> auf Saturn, der für Pflicht und Arbeit steht, und dann sinkt auch die Stimmungskurve etwas nach unten.
+Monica Kissling (A97/APR.01173 St. Galler Tagblatt, 29.04.1997, Ressort: TB-VGN (Abk.); ebt ae, unu lengen)
+
+
+Sonne: Im Mai nimmt die Tageslänge weiter zu, von 14 Stunden und 23 Minuten auf 15 Stunden 36 Minuten.
+<B>Mond:</> Neumond ist in diesem Monat am sechsten. Drei Tage zuvor, am dritten, befindet er sich in Erdnähe, dasselbe ist auch am 29. nochmals der Fall. (A97/MAI.01802 St. Galler Tagblatt, 05.05.1997, Ressort: TB-WIS (Abk.); Blick zum Saturn in der Morgendämmerung)
+
+ Drei Tage zuvor, am dritten, befindet er sich in Erdnähe, dasselbe ist auch am 29. nochmals der Fall. Im ersten Viertel sehen wir den <B>Mond</> am 14., der Vollmond strahlt am 22. Schliesslich befindet er sich am 29. im letzten Viertel.
+Die Planeten: Merkur steht zwar am 22. im grössten westlichen Winkelabstand zur Sonne, wegen seiner geringen Höhe über dem Horizont bleibt er im Dunst verborgen. (A97/MAI.01802 St. Galler Tagblatt, 05.05.1997, Ressort: TB-WIS (Abk.); Blick zum Saturn in der Morgendämmerung)
+
+ Ein Billett mit der Nr. «0001» besitzt Bauer auch von der Niesen-Bahn. Eher als Jux anzusehen ist ein Exponat vom 12. Juli 1969, das zu einer Fahrt zum <B>Mond</> via Gurten berechtigt. Bauer, heute Leiter eines Arbeitslosen-Projekts, das historisches Rollmaterial mit zum Teil hochqualifizierten Fachleuten in Burgdorf restauriert, will möglichst viele Billetts vor der Vernichtung bewahren. (A97/MAI.01857 St. Galler Tagblatt, 05.05.1997, Ressort: TB-ROM (Abk.); Der Sammler mit dem Ticket-Tick)
+
+
+Reiselustiger Männerchor
+Reiselustig wirkten die Männer, denn dies zeigen die Titel «Zieh in die Welt» von Walter Höfling, der «Fliegermarsch» aus der Operette «Der fliegende Rittmeister» von Hermann Dostal, im Lied «Mann im <B>Mond»</> von Tobias Künzel und im «Ol' Man River» aus dem Musical «Showboat» von Jerome Kern. Beschwingt und unternehmungslustig zeigte sich der Männerchor auch in seinen Beiträgen. (A97/MAI.02245 St. Galler Tagblatt, 06.05.1997, Ressort: AT-KAP (Abk.); «Frohsinn» präsentiert seine Ohrwürmer)
+
+ Zwischenmenschliche Kontakte dürften im Moment noch unbelastet und anregend sein.
+Am Sonntagmorgen gerät der <B>Mond</> kurzfristig in einen kritischen Kontakt mit Saturn: Da reagiert man empfindlicher, und vielleicht liegt einem auch etwas auf dem Magen oder man ist ganz einfach nicht so recht fit. Dank einer Jupiter-Sonne-Verbindung kommt man aber schnell wieder in Schwung. (A97/MAI.02257 St. Galler Tagblatt, 06.05.1997, Ressort: TB-VGN (Abk.))
+
+ Noch bis am kommenden Sonntag findet die «Woche des offenen Dachs» statt. Der erste Abend in dieser Veranstaltungs-Reihe stand unter dem Motto «Unser <B>Mond».</>
+5 Seite «Unterrheintal»: «Eine (A97/MAI.03637 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); GV genehmigte 8 Prozent Dividende)
+
+
+5 Seite «Unterrheintal»: «Eine stahl dem <B>Mond</> die » (A97/MAI.03637 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); GV genehmigte 8 Prozent Dividende)
+
+Eine «Feuerkugel» stahl dem <B>Mond</> die «Show»
+HEERBRUGG. (A97/MAI.03699 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); Eine «Feuerkugel» stahl dem Mond die «Show»)
+
+
+HEERBRUGG.
+Oben auf dem Dach des Schulhauses werfen die geladenen Gäste der Reihe nach einen Blick durch die Teleskope - ganz nach dem Motto der Sternwarte der Kantonsschule: «Take a look.» Der <B>Mond</> steht im Mittelpunkt des ersten Abends im Rahmen der laufenden «Woche des offenen Dachs».
+Den Mond in «Griffweite» (A97/MAI.03699 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); Eine «Feuerkugel» stahl dem Mond die «Show»)
+
+
+Oben auf dem Dach des Schulhauses werfen die geladenen Gäste der Reihe nach einen Blick durch die Teleskope - ganz nach dem Motto der Sternwarte der Kantonsschule: «Take a look.» Der Mond steht im Mittelpunkt des ersten Abends im Rahmen der laufenden «Woche des offenen Dachs».
+Den <B>Mond</> in «Griffweite»
+Der Mond - oder «dä Moo», wie ihn Kantonsschullehrer Fritz Schocher zuvor in seinem einleitenden Kurzvortrag unten im Physikzimmer bezeichnet hatte - kann für einmal in ungewohnt grosser Grösse betrachtet werden. (A97/MAI.03699 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); Eine «Feuerkugel» stahl dem Mond die «Show»)
+
+
+Den Mond in «Griffweite»
+Der <B>Mond</> - oder «dä Moo», wie ihn Kantonsschullehrer Fritz Schocher zuvor in seinem einleitenden Kurzvortrag unten im Physikzimmer bezeichnet hatte - kann für einmal in ungewohnt grosser Grösse betrachtet werden. Noch kurz zuvor hatte sich Schocher über die Eigenschaften des schon fast unvorstellbar weit entfernten, aber doch ständigen «Begleiters» des «blauen Planeten» beinahe ereifert. (A97/MAI.03699 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); Eine «Feuerkugel» stahl dem Mond die «Show»)
+
+ «Eine Feuerkugel», sagt Fritz Schoch im ersten Moment begeistert, ist sich im zweiten aber doch nicht ganz sicher, ob es tatsächlich eine Leuchterscheinung der Grösse war, die mit diesem Namen bezeichnet wird. Vielleicht war es auch nur ein kleiner Meteor - auf jeden Fall hat dieser dem <B>Mond</> für einmal die «Show» gestohlen.
+Jürg Roggenbauch (A97/MAI.03699 St. Galler Tagblatt, 15.05.1997, Ressort: RT-NAB (Abk.); Eine «Feuerkugel» stahl dem Mond die «Show»)
+
+ Am 20. Juli referiert Ernst Tanner über seine Arbeit beim Wiederaufbau eines Klosters in Nepal. Auch am 18. August soll der <B>Mond</> aufgehen: Der Chor der Musikschule Herisau (Leitung: Roman Rutishauser) singt Mondlieder. «Was wächst da rund ums Chräzerli?» ist das Thema von Ruedi Widmer, Trogen, der am 16. September in das Reich der Pflanzen, Blumen und Heilpflanzen einführt. (A97/MAI.04783 St. Galler Tagblatt, 22.05.1997, Ressort: AT-KAP (Abk.); Dorle Vallender bei der FDP Heiden)
+
+ Später stellte die Bahn vom Dampfbetrieb auf Elektrizität um, Spelterini flog mit dem Ballon, Zeppelin mit dem Luftschiff. Dann kamen der Siegeszug von Auto und Flugzeug, und zuletzt flog man sogar auf den <B>Mond,</> von wo aus die Astronauten so deutlich mit Präsident Nixon sprechen konnten «als wäre es von Mörschwil aus», wie Karl Zäch schreibt.
+Ziegelei, Steinbruch, Post (A97/MAI.05488 St. Galler Tagblatt, 26.05.1997, Ressort: RT-NAB (Abk.); Lebenserinnerungen eines Oberrieters)
+
+ Zwei Mädchen kommentierten die Diaschau. Auch der erste Mensch auf dem <B>Mond</> habe sich die Erde anders vorgestellt, wurde berichtet. Über der Antarktis sei der Ozonabbau am stärksten, erklärten die Mädchen und fügten hinzu: Die grösste Bedrohung komme von den Industrieländern. (A97/MAI.05613 St. Galler Tagblatt, 27.05.1997, Ressort: TB-GO (Abk.); Ein Lehrer wurde «angeschwärzt»)
+
+ Neben knisternder Erotik und neuen Bekanntschaften könnte er aber aufgrund von widersprüchlichen Bedürfnissen auch Spannungen und Konflikte bringen. Trotzdem sollte man aktiv sein: Wenn am späteren Freitag abend der <B>Mond</> in den Widder wechselt, ist der Zeitpunkt ideal, um sich ins Nachtleben zu stürzen.
+Aktives Wochenende (A97/MAI.05742 St. Galler Tagblatt, 27.05.1997, Ressort: TB-VGN (Abk.); Gemeinsame neue Lösungen suchen)
+
+ Bereits der heutige Dienstag ist ein Tag der grossen Pläne: das können berufliche wie auch Ferienpläne sein. Und wenn von morgen Mittwoch bis Freitagmittag der <B>Mond</> durch die Zwillinge wandert, bekommt man noch zusätzliche Anregungen. Morgen Mittwoch gibt es zwar kurzfristig eine kritische Konstellation von Mond und Pluto: dann können unverdaute Gefühle nochmals hochkommen. (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+ Und wenn von morgen Mittwoch bis Freitagmittag der Mond durch die Zwillinge wandert, bekommt man noch zusätzliche Anregungen. Morgen Mittwoch gibt es zwar kurzfristig eine kritische Konstellation von <B>Mond</> und Pluto: dann können unverdaute Gefühle nochmals hochkommen. Am Donnerstag sieht aber schon alles wieder anders aus:Mit dem Neumond in den Zwillingen und anderen harmonischen Mond-Konstellationen ist das das der günstigste Tag der Woche - hervorragend geeignet für den Start neuer Projekte sowie die Kommunikation ganz allgemein. (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+ Die Krebs-Venus zeigt an, dass man sich nach verlässlichen Werten sehnt und wieder mehr Sicherheit im emotionalen Bereich braucht. So richtig spürbar wird das aber vielleicht erst ab Freitagmittag, wenn der <B>Mond</> die Zwillinge verlässt und ebenfalls in den Krebs tritt. Dann ist die Zeit zum Schmusen und Kuscheln gekommen. (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+
+Wer zusammen mit seinem Liebsten in Gefühlen schwelgen möchte, der wählt am besten den Freitagabend. Dann treffen sich nämlich <B>Mond</> und Venus im Krebs: Das ist ein vielversprechender Abend, ganz besonders für Liebesromanzen. Weil der Mond aber nicht sichtbar ist, kann man diese spezielle Stimmung leider nicht beim Mondscheinspaziergang geniessen, sollte aber auf jeden Fall einem romantischen Ambiente den Vorzug geben. (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+ Dann treffen sich nämlich Mond und Venus im Krebs: Das ist ein vielversprechender Abend, ganz besonders für Liebesromanzen. Weil der <B>Mond</> aber nicht sichtbar ist, kann man diese spezielle Stimmung leider nicht beim Mondscheinspaziergang geniessen, sollte aber auf jeden Fall einem romantischen Ambiente den Vorzug geben.
+Ausklang zum Träumen (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+ Wer sich nicht recht wohl fühlt, zieht sich nun eher in die eigenen vier Wände zurück. Wenn sich am Samstagabend <B>Mond</> und Saturn verbinden, könnte ein solcher Rückzugsmoment eintreten, vielleicht weil man enttäuscht ist, nicht das zu bekommen, was man sich wünscht.
+Wer sich einfach nur beleidigt zurückzieht und hofft, dass andere auf ihn zukommen, könnte auch am Sonntag noch mit unerfüllten Sehnsüchten zu kämpfen haben. (A97/JUN.07178 St. Galler Tagblatt, 03.06.1997, Ressort: TB-VGN (Abk.); Kontakte knüpfen und Pläne schmieden)
+
+ Dieser war sogar so gross, dass er nach einer gesanglichen Zugabe rief. Und nebst dieser wurde schliesslich auch noch das Gedicht «Der <B>Mond</> ist aufgegangen» von Mathias Claudius vorgetragen. (A97/JUN.07324 St. Galler Tagblatt, 04.06.1997, Ressort: RT-NAB (Abk.); Dichtung und Musik im Einklang)
+
+ Am meisten Meter umfasst dabei das Jahr 1816, das «Liederjahr», während dem Schubert die Lieder zu Dutzenden komponiert hat. Da folgt auf «Die Perle» «Pflicht und Liebe», weiter kommen «An den <B>Mond</> (Was schauest du so hell)», «Mignon (So lass mich erscheinen, bis ich werde)», eine «Ouvertüre in B» und das «Streichtrio in B».
+Dazwischen liegen die wichtigsten Autographen in Schaukästen. (A97/JUN.07365 St. Galler Tagblatt, 04.06.1997, Ressort: TB-KUL (Abk.); Vier Hemden, 1000 Werke)
+
+
+Macht des Mondes
+So nah wie der <B>Mond</> kommt uns kein anderer Himmelskörper. Nicht nur das Wasser mit den Gezeiten von Ebbe und Flut, sondern auch die Menschen bekommen seine Macht zu spüren - Chronobiologen untersuchen, wie.5 «Wissen» (A97/JUN.07450 St. Galler Tagblatt, 05.06.1997, Ressort: TB-FRO (Abk.); Algerien wählt)
+
+Die Macht des Mondes
+Chronobiologen untersuchen, wie der <B>Mond</> die Organismen der Erde beeinflusst - auch den Menschen
+Auf vielfältige, wenn auch in der Regel sehr unauffällige Weise beeinflusst der Mond das Leben auf der Erde. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+
+Chronobiologen untersuchen, wie der Mond die Organismen der Erde beeinflusst - auch den Menschen
+Auf vielfältige, wenn auch in der Regel sehr unauffällige Weise beeinflusst der <B>Mond</> das Leben auf der Erde. Die Chronobiologie, welche sich den rhythmischen Abläufen in der Natur widmet, hat auch den Mond seit langem als einen Faktor ins Auge gefasst. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+
+Auf vielfältige, wenn auch in der Regel sehr unauffällige Weise beeinflusst der Mond das Leben auf der Erde. Die Chronobiologie, welche sich den rhythmischen Abläufen in der Natur widmet, hat auch den <B>Mond</> seit langem als einen Faktor ins Auge gefasst. Denn so nah wie er kommt uns kein anderer Himmelskörper, und nicht nur das Wasser mit Ebbe und Flut bekommt seine Macht zu spüren. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+ Würde man sie nämlich von der Umwelt abschirmen, dann stiesse man in vielen Fällen auf einen Schlaf-Wach-Rhythmus von 25 Stunden.
+Es ist dies nur ein Beispiel für die vielen Einflüsse, die vom <B>Mond</> ausgehen. Einflüsse, die wissenschaftlich durchaus belegt sind, und denen die zwei Biologen Klaus-Peter Endres und Wolfgang Schad in einem kürzlich erschienenen Buch nachgehen*. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+ Seine Bewegungsaktivität ist abends und nachts am grössten, sowie etwa drei Stunden vor dem täglichen Tiefststand des Mondes unter dem Horizont, während Voll- und besonders Neumond.
+Auch die Honigbiene «kennt» den <B>Mond:</> Sie fliegt am aufgeregtesten an Tagen des Vollmondes, wenn die Waben nord-südlich standen und das Ausflugloch nach Norden ging.
+Unter den Wirbeltieren ist der Aal ein gutes Beispiel für mondperiodisches Verhalten. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+ Diese Blankaal-Wanderungen sind, wie die Fangbücher der Fischer vom Oberrhein feststellen, vom Wasserstand, der Temperatur, der Tages- und Jahreszeit und der Mondphase abhängig. Die grössten Fänge wurden gemacht im Herbst bei steigendem oder hohem Wasserstand, nicht zu kaltem, aber wolkigen Wetter, in der Nacht, und wenn der <B>Mond</> im dritten Viertel stand.
+Nicht nur Regenwurm und Aal spüren die Mondrhythmik und folgen ihr. (A97/JUN.07521 St. Galler Tagblatt, 05.06.1997, Ressort: TB-WIS (Abk.); Die Macht des Mondes)
+
+
+Der Mittwoch ist ein kritischer und wichtiger Tag. Der Kontakt- und Kommunikationsplanet Merkur steht dann in den Zwillingen in Spannung mit Pluto und <B>Mond.</>Deshalb reagiert man an diesem Tag sehr emotional, nicht immer so flexibel und distanziert, wie man es unter starken Zwillinge-Konstellationen erwarten würde. (A97/JUN.08571 St. Galler Tagblatt, 10.06.1997, Ressort: TB-VGN (Abk.); Intensive Kontakte und wichtige Entscheidungen)
+
+ Dabei besteht die Gefahr, dass man alles verliert, oder dass man andere manipuliert oder unter Druck setzt. Es könnte sich deshalb lohnen, mit wichtigen Entscheidungen bis zum Donnerstag zu warten, weil dann der <B>Mond</> harmonisch steht und die exakte Sonne-Jupiter-Konstellation unterstützend wirkt in bezug auf Offenheit, Toleranz und Entgegenkommen.
+Alles in allem ist diese Woche im Vergleich zur letzten nicht mehr ganz so unbeschwert, weil die angespannte Verbindung von Merkur und Pluto, die bis etwa Freitag spürbar ist, einige «Altlasten» hochbringen kann. (A97/JUN.08571 St. Galler Tagblatt, 10.06.1997, Ressort: TB-VGN (Abk.); Intensive Kontakte und wichtige Entscheidungen)
+
+ Nachtschwärmer könnten in den frühen Morgenstunden des Sonntags einigen Stimmungsschwankungen unterliegen. Ein disharmonischer Kontakt von <B>Mond</> und Venus macht es nicht leicht, unterschiedliche Bedürfnisse unter einen Hut zu kriegen. Gefühl und Lustprinzip wollen nicht so recht zusammen, und so könnte man mit Entscheidungsproblemen zu kämpfen haben. (A97/JUN.08571 St. Galler Tagblatt, 10.06.1997, Ressort: TB-VGN (Abk.); Intensive Kontakte und wichtige Entscheidungen)
+
+
+Einen Tag vor einer Vollmondnacht lädt Kurt Aeschbacher zur Mondschein-Party in der «Casa Nostra» ein. Ein kunterbuntes Völklein gibt sich im Gästehaus ein Stelldichein: Die Bestsellerautorin und Tiroler Volkskundlerin Johanna Paungger weiss über den <B>Mond</> und seine Einflüsse auf den Menschen zu berichten. Dr. Bruno Stanek, der als «Mr. (A97/JUN.10272 St. Galler Tagblatt, 19.06.1997, Ressort: SGT-PRO (Abk.); TVDRS, 20.00)
+
+ Karl Scheuber, Chorleiter und Lehrer am Konservatorium Zürich, fü¨hrte mit dem von ihm gegründeten «schmaz» während des Apéros durch ein ganzes Jahrtausend, einsetzend mit einer Sequenz von Notker Balbulus, einem strengen mehrstimmigen «Kyrie» von Guillaume de Machault aus dem 14. und einem freieren «Ave Maris stella» von Guillaume Dufay aus dem frühen 15. Jahrhundert. Kurze Gesänge von Palestrina und Monteverdi, ein Ausschnitt aus Schuberts «Nachtgesang» und Robert Schumanns Zyklus «Frauenliebe und -leben» folgten, dann nochmals ein Sprung zu einem Sprechchor von Wladimir Vogel, dem neckischen «Mann im <B>Mond»</> der deutschen Gruppe «Die Prinzen» und John Cages «4 Minuten 33 Sekunden», wovon allerdings nur ein Viertel geschwiegen wurde; fast fünf Minuten Schweigen wollte Scheuber dem Publikum nicht zumuten.
+Lokale Netzwerke pflegen (A97/JUN.11041 St. Galler Tagblatt, 23.06.1997, Ressort: AT-KAP (Abk.); Ein Musikfest mit hoher Qualität)
+
+ Der Wunsch, etwas zu erleben, zu sehen und gesehen zu werden, drängt einen aus dem Haus, und tatsächlich ist dies der beste Abend der Woche, was die gute Laune anbelangt. Noch ist der <B>Mond</> im Widder, was auf Dynamik und Unternehmenslust deutet. Am Sonntag steht der Mond dann im Stier in angespannter Verbindung mit Venus und Uranus - das könnte wiederum für einige Stimmungsschwankungen sorgen man nicht recht weiss, was man nun eigentlich will. (A97/JUN.11184 St. Galler Tagblatt, 24.06.1997, Ressort: TB-VGN (Abk.); Auf Konfrontationskurs)
+
+ Noch ist der Mond im Widder, was auf Dynamik und Unternehmenslust deutet. Am Sonntag steht der <B>Mond</> dann im Stier in angespannter Verbindung mit Venus und Uranus - das könnte wiederum für einige Stimmungsschwankungen sorgen man nicht recht weiss, was man nun eigentlich will. Man schwankt zwischen Anlehnungsbedürfnis und Freiheitsdrang und ist dabei etwas unberechenbar. (A97/JUN.11184 St. Galler Tagblatt, 24.06.1997, Ressort: TB-VGN (Abk.); Auf Konfrontationskurs)
+
+
+Ab Donnerstagabend herrscht eine sehr emotionale Stimmung. Der <B>Mond</> tritt in den Krebs und steht dort am Freitag in Spannung mit Mars. Deshalb reagiert man schnell und heftig, und Gefühle können ziemlich unkontrolliert an die Oberfläche kommen. (A97/JUL.12293 St. Galler Tagblatt, 01.07.1997, Ressort: TB-VGN (Abk.); Mehr Druck und Kritik, aber auch mehr Klarheit)
+
+ In diesem Fall neigt man zu einer pessimistischen, einseitigen Meinung und muss sich mit verletzenden und zynischen Bemerkungen zurückhalten. Wenn am Sonntag <B>Mond</> und Venus im Löwen und Uranus in Spannung stehen, bekommen Gefühle eine dramatische Note. Man handelt unter Umständen, ohne die Folgen abzuschätzen. (A97/JUL.12293 St. Galler Tagblatt, 01.07.1997, Ressort: TB-VGN (Abk.); Mehr Druck und Kritik, aber auch mehr Klarheit)
+
+
+Dennoch bleibt der Mars der erdnächste Punkt im Weltraum, auf dem es Leben gegeben haben könnte. Ausserdem ist er für die Erdenbewohner nach dem <B>Mond</> der nächste Himmelskörper, auf dem Astronauten landen könnten. Das andere mögliche Ziel, die Venus, ist schon vor Jahrzehnten ausgefallen, nachdem Raumsonden bei ihr eine Oberflächen-Temperatur von annähernd 500 Grad Celsius gemessen hatten. (A97/JUL.12439 St. Galler Tagblatt, 02.07.1997, Ressort: TB-AKT (Abk.); Landung nach vielen Pannen?)
+
+
+Während am Freitag harmonische Einflüsse des Mondes noch für mehr oder weniger Ausgeglichenheit sorgen, bieten die Sterne amWochenende ein gemischtes Programm. Während der <B>Mond</> in der Waage und die Venus im Löwen Lebensfreude und Toleranz signalisieren, brauen sich gleichzeitig einige Spannungskonstellationen zusammen. Diese könnten Hektik und Aufregung, aber auch Hindernisse und Schwierigkeiten bringen. (A97/JUL.13541 St. Galler Tagblatt, 08.07.1997, Ressort: TB-VGN (Abk.); Wunsch nach Intensität und Leidenschaft)
+
+ Eine stabile Mitte zu finden, fällt jetzt schwer, und so ist dieses Wochenende für wichtige Entscheidungen nicht geeignet. Am Sonntagabend, wenn der <B>Mond</> bei Uranus im Wassermann steht, kann sich denn auch schon wieder ganz überraschend eine Gefühlswende abzeichnen.
+Die Wochenend-Konstellation macht es schwierig, Grenzen zu setzen, und so besteht eine Tendenz zum Überborden in verschiedener Hinsicht. (A97/JUL.14558 St. Galler Tagblatt, 15.07.1997, Ressort: TB-VGN (Abk.); Stimmungsbarometer steigt)
+
+
+Im Kalendarium des soeben erschienenen Appenzeller Kalenders für das Jahr 1998 ist eine von vielen Leserinnen und Lesern gewünschte Präzisierung vorgenommen worden. Auf die Stunde genau gibt der Appenzeller Kalender nun Auskunft, in welchem Tierkreiszeichen der <B>Mond</> steht.
+Ein Beispiel: Steht der Mond am Samstag, 9. Mai 1998, im Zeichen der Waage oder des Krebses? (A97/JUL.14719 St. Galler Tagblatt, 16.07.1997, Ressort: AT-KAP (Abk.); Appenzeller Kalender mit präzisem Kalendarium)
+
+ Auf die Stunde genau gibt der Appenzeller Kalender nun Auskunft, in welchem Tierkreiszeichen der Mond steht.
+Ein Beispiel: Steht der <B>Mond</> am Samstag, 9. Mai 1998, im Zeichen der Waage oder des Krebses? Der Appenzeller Kalender gibt präzise Auskunft: bis um 23 Uhr gilt die Waage, danach bis zum Dienstag, 12. Mai 1998, 11 Uhr, der Krebs. (A97/JUL.14719 St. Galler Tagblatt, 16.07.1997, Ressort: AT-KAP (Abk.); Appenzeller Kalender mit präzisem Kalendarium)
+
+
+"" «Obsigend und nidsigend» hat nichts mit den Mondphasen zu tun, sondern allein mit dem Lauf des Mondes über den Horizont. Steht der <B>Mond</> am gleichen Ort im Tierkreis wie die Sonne am kürzesten Tag, so ist er in Tiefststellung. Der Mond steht tief über dem Südhorizont und steigt nun täglich, er läuft «obsigend». (A97/JUL.15042 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Freitag, 18. Juli 1997)
+
+ Steht der Mond am gleichen Ort im Tierkreis wie die Sonne am kürzesten Tag, so ist er in Tiefststellung. Der <B>Mond</> steht tief über dem Südhorizont und steigt nun täglich, er läuft «obsigend». Mit dem Zeichen der Zwillinge hat er seine Höchststellung erreicht. (A97/JUL.15042 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Freitag, 18. Juli 1997)
+
+
+Bei «obsigend» soll gepflanzt werden, was in die Höhe wächst, eine Quelle gefasst, ein Wassergraben ausgestochen, ein Miststock auf die Wiese versetzt werden. Allerdings nur bei zunehmendem <B>Mond</> sollten die Haare geschnitten werden.
+Bei «nidsigend» soll der Mist ausgetragen werden, denn sonst bleibt der Mist bis zum Heuet liegen. (A97/JUL.15042 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Freitag, 18. Juli 1997)
+
+ Empfohlen wird das Pflanzen von Kartoffeln und Rüben. Bei «nidsigend», aber nur bei abnehmendem <B>Mond</> soll das Bauholz für ein Haus geschlagen werden. "" (A97/JUL.15042 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Freitag, 18. Juli 1997)
+
+ Pro Tag werden auf der «Kreuzegg» rund 12 bis 15 Kubikmeter Rundholz verarbeitet.
+«Nidsigehender <B>Mond»</>
+Robert Manser, Bauherr auf der «Kreuzegg», schlug die 100 bis 150 Jahre alten Bergfichten im letzten Frühherbst im eigenen Wald nördlich der Kreuzegg. (A97/JUL.15045 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Besuch bei den Mobilsägern am Berg)
+
+
+Robert Manser, Bauherr auf der «Kreuzegg», schlug die 100 bis 150 Jahre alten Bergfichten im letzten Frühherbst im eigenen Wald nördlich der Kreuzegg. «Natürlich bei nidsigehendem <B>Mond,</> wie es eben bei traditionsbewussten Holzern noch üblich sei, verrät Manser. Mit der 700 Meter langen Seilbahn der Gebrüder Rüegg aus Goldingen wurden die Rundhölzer aus den beiden vom Revierförster Urs Kern bestimmten Schlägen zum Berg verfrachtet. (A97/JUL.15045 St. Galler Tagblatt, 18.07.1997, Ressort: TT-TOG (Abk.); Besuch bei den Mobilsägern am Berg)
+
+ Kühn erheben sich die Berge. Hinter ihren stolzen, steil aufragenden Felsen verbirgt sich ein scheuer <B>Mond.</>Ein alter Mann sitzt dort, lächelt vor sich hin und verschwindet vor meinen Augen. (A97/JUL.16110 St. Galler Tagblatt, 26.07.1997, Ressort: TT-TOG (Abk.); Samstag, 26. Juli 1997)
+
+
+Auch wenn einem vielleicht der Liebeskummer und die Probleme der vergangenen Woche noch schwer auf dem Magen liegen, sieht man die Welt am Wochenende nicht mehr ganz so schwarz. Zwar bringt die Mond-Neptun-Verbindung am Samstag morgen noch nicht unbedingt die gewünschte Stimmungsverbesserung, doch wenn am Mittwoch der <B>Mond</> in den Löwen wechselt, hat man bereits wieder mehr Energie und ist eher bereit, die Initiative zu ergreifen. Im Verlauf des Tages wie auch in der Nacht auf den Sonntag zeichnen sich dann Konstellationen ab, die einerseits Leidenschaft und Intensität versprechen, und anderseits wieder deutlich mehr Anlass zu Optimismus und Hoffnung bieten. (A97/JUL.16405 St. Galler Tagblatt, 29.07.1997, Ressort: TB-VGN (Abk.); Konsequenzen ziehen, Weichen stellen)
+
+
+Draussen indes liebkost mit dem Plantanos flüsternd die Pinie,
+Und bald steiget herauf vom Capitole der <B>Mond.</>
+Aber was gibt's? (A97/AUG.16789 St. Galler Tagblatt, 02.08.1997, Ressort: SGT-REI (Abk.); Der Cicerone: Vorbild für jeden Reiseführer)
+
+
+* kurt schiesser
+Knochige Indianergesichter, gefärbte Bisonschädel, den <B>Mond</> anheulende Wölfe, einzigartige Ledergürtel in allen vorstellbaren Designs, Geldbörsen, verziert mit Harley-Davidson-Motoren, religiös anmutenden Motiven, elegante Messerscheiden, verzierte Motorradsättel: Wer Willys Leder-Workshop betritt, taucht in eine andere Welt ein, in die Welt der Lederhandwerkskunst: Einige der verwendeten Werkzeuge erinnern an einen fast schon vergessenen Beruf, den des Sattlers: Ledernähmaschinen, Drehmesser, Punziereisen. Nur 25 solcher LederWorkshops gibt es in unserem Land. (A97/AUG.17002 St. Galler Tagblatt, 04.08.1997, Ressort: TB-OT (Abk.); Lernen, Leder kunstvoll zu verarbeiten)
+
+ Und weil Neptun stark steht, muss man sich vor zu hohen Erwartungen hüten, sonst kann es leicht zu Enttäuschungen kommen.
+Wenn am Sonntag der <B>Mond</> im Skorpion und der Mars in kritischer Position steht, können schmerzliche und auch leidenschaftliche Gefühle unerwartet an die Öffentlichkeit kommen. Man reagiert sehr emotional, ohne lange zu überlegen. (A97/AUG.17257 St. Galler Tagblatt, 05.08.1997, Ressort: TB-VGN (Abk.); Auf die innere Stimme hören)
+
+
+Offensichtlich hatte Malcolm Redman nach dem Abendessen plötzlich den Einfall gehabt, mit seiner Verlobten eine Ruderbootfahrt auf dem nahegelegenen Fluss zu machen.
+«Der <B>Mond</> schien hell.. ., Sie wissen ja, wie das ist», sagte Redman entschuldigend. «Als wir mitten auf dem Fluss waren, machten wir ein bisschen Unfug, und Jane fiel ins Wasser.» Redman sagte, er habe sofort nach ihr getaucht, sie aber nicht gefunden. (A97/AUG.17929 St. Galler Tagblatt, 11.08.1997, Ressort: TB-VGN (Abk.); Der Tod bei Mondschein)
+
+
+«Sie war spurlos verschwunden.» Redman war sehr bewegt, als er Carter die Geschichte erzählte. «Dieser verdammte <B>Mond</> verschwand hinter eine Wolke, und ich konnte nicht die Spur sehen.»
+Nach etwa zehn Minuten habe er die Suche aufgegeben. (A97/AUG.17929 St. Galler Tagblatt, 11.08.1997, Ressort: TB-VGN (Abk.); Der Tod bei Mondschein)
+
+ Auf dem Programm stehen Lieder von Roelli bis Swing, zarte, humorvolle Kindernachtgebete von Ringenatz und frechere Nachtwünsche von Mozart. Das nächtliche Sehnen einer Waldgeiss wird besungen und das Leben eigenartiger Mondbewohner, wie zum Beispiel das von der Mondschaft, oder dem Mann im <B>Mond.</>Die Chorschule Herisau besteht aus zirka 30 Sänger und Sängerinnen.bl. (A97/AUG.18616 St. Galler Tagblatt, 15.08.1997, Ressort: TT-TOG (Abk.); Vollmondabend im Chräzerli)
+
+ Auf dem Programm stehen Lieder von Roelli bis Swing, zarte, humorvolle Kindernachtgebete von Ringenatz und frechere Nachtwünsche von Mozart. Das nächtliche Sehnen einer Waldgeiss wird besungen und das Leben eigenartiger Mondbewohner, wie zum Beispiel das vom dem Mondschaft, oder dem Mann im <B>Mond.</>Die Chorschule Herisau besteht aus zirka 30 Sänger und Sängerinnen.bl. (A97/AUG.18652 St. Galler Tagblatt, 15.08.1997, Ressort: TB-GO (Abk.); Vollmondabend im Chräzerli)
+
+
+* Heini Schwendener
+Am Donnerstag abend, dem letzten Tag der Freilicht-Kino-Veranstaltung, strahlt Rohy Batliwala mit dem <B>Mond</> am Abendhimmel um die Wette. «Unter solchen Umständen könnte man das Open-air-Kino noch tagelang weiterführen», sagt er mit Blick auf das Publikum, das an der Kasse Schlange steht. (A97/AUG.18889 St. Galler Tagblatt, 16.08.1997, Ressort: RT-NAB (Abk.); Knapp 6000 Leute am Open-air-Kino)
+
+
+Am frühen Samstagmorgen wechselt die Sonne das Sternzeichen und wandert vom feurigen Löwen in die gemässigtere Jungfrau. Man würde also meinen, dass damit ein ruhiges Wochenende bevorsteht, zumal sich auch der <B>Mond</> in diesen zwei Tagen im beständigen Stier aufhält. Von Ruhe ist allerdings nicht viel zu spüren, und wer sich auf ein entspanntes und ausgeglichenes Wochenende freut, wird vermutlich enttäuscht. (A97/AUG.19280 St. Galler Tagblatt, 19.08.1997, Ressort: TB-VGN (Abk.); Ungeduld wächst - Wunsch nach Harmonie)
+
+ Es ist deshalb kein Zufall, dass der Appenzeller Verlag auch für 1998 einen Saat- undPflanzkalender nach Mondstand und Sternzeichen herausgibt. Der Kalender zeigt an, wie der <B>Mond</> Pflege und Wachstum von Zier- und Nutzpflanzen beeinflusst. Jedem Monat ist eine Doppelseite mit dem Monatsblatt des Appenzeller Kalenders gewidmet. (A97/AUG.20053 St. Galler Tagblatt, 23.08.1997, Ressort: TB-LBN (Abk.))
+
+
+* peter surber
+Es mag Zufall sein, dass der eine, der 1979 gestorbene St.Galler Dichter Joseph Kopf, «todhelle» Gedichte schreibt, dass der andere, Franz Schubert, in einem seiner befremdlichsten Lieder «Grab und <B>Mond»</> anruft. Oder vielleicht doch kein Zufall - beide, Kopf wie Schubert, kannten das Dunkle des Lebens, ahnten das noch Dunklere des Todes. (A97/AUG.20296 St. Galler Tagblatt, 25.08.1997, Ressort: TB-KUL (Abk.); Open Opera begann fulminant)
+
+ Die Konfliktgefahr ist deutlich geringer, und man zeigt sich vielmehr von der genussfreudigen Seite. Von Freitagabend bis Sonntag steht der <B>Mond</> im Löwen, und das ist gut, weil es die Lebenslust, den Tatendrang und den Optimismus steigert. Am Samstag gibt es zudem sehr dynamische Konstellationen, die zur Aktivität und Geselligkeit auffordern. (A97/AUG.20501 St. Galler Tagblatt, 26.08.1997, Ressort: TB-VGN (Abk.); Unstimmigkeiten - unbedingt Klarheit schaffen)
+
+
+Ein milder Samstagabend am See wischen «Arion» und «Idyll». Der <B>Mond</> scheint goldorange über die Dächer der Badhütte und spiegelt sich im leicht wellenden Wasser. Gut gelaunte Menschen flanieren den Ständen entlang auf der Promenade oder sitzen an den von freiwilligen Helfern aufgebauten Tischen, geniessen die einmalige Athmosphäre. (A97/AUG.20628 St. Galler Tagblatt, 27.08.1997, Ressort: TB-OT (Abk.); Die Badhütte lebt)
+
+
+* peter E. Schaufelberger
+Ursina Gregori und Charlotte Widmer waren bereits mit ihrem ersten gemeinsamen Programm «Ja, wenn der <B>Mond..</> .» Gäste von «Open opera»; vor vollbesetzter Kreuzbleiche-Turnhalle standen sie nun auch mit ihrer zweiten Produktion auf der Bühne. Allein, nur mit ihren Akkordeons, die ihnen auch als Rucksack, Schreib- oder Beatmungsmaschine dienten, hinter, neben, vor oder unter sich ein ebenso vielseitig verwendbarer Hocker, dazu ein Notenständer, der sich als «Baum der Erkenntnis» ebenso bewährte wie als klappriges Reittier. (A97/AUG.21221 St. Galler Tagblatt, 30.08.1997, Ressort: TB-SG (Abk.); Zwei Frauen und zwei Akkordeons)
+
+
+Neue Sicht
+Rechtzeitig aufs Wochenende wechselt der <B>Mond</> am Samstag morgen vom Steinbock in den Wassermann, und das verspricht immerhin etwas Auflockerung nach einer nicht gerade einfachen Woche. Der Wassermann, ein vorwärtsstrebendes und vielseitig interessiertes Sternzeichen, zeigt an, dass man die Aufmerksamkeit wieder mehr in die Zukunft richten kann und sich von der Vergangenheit allmählich löst. (A97/SEP.23099 St. Galler Tagblatt, 09.09.1997, Ressort: TB-VGN (Abk.); Wendepunkt: Entscheidungen von grosser Tragweite)
+
+Keine andere Weltraumnation verfügt über einen so grossen Erfahrungsschatz in der bemannten Raumfahrt wie Russland. Nach dem verlorenen Wettlauf auf den <B>Mond</> begann die damalige Sowjetunion mit der Realisierung eines Raumstationsprogramms.
+Der Aufenthalt auf den Saljut-Stationen wurde sukzessive verlängert. (A97/SEP.23509 St. Galler Tagblatt, 11.09.1997, Ressort: TB-WIS (Abk.); Mir: Ein Ort der Zusammenarbeit)
+
+ Radio DRS1, 09.35
+Der <B>Mond</> bewegt seit jeher das Gemüt der Menschen. Insbesondere auch jenes der Dichter. (A97/SEP.24052 St. Galler Tagblatt, 15.09.1997, Ressort: SGT-PRO (Abk.); TVZDF, 20.15)
+
+ Insbesondere auch jenes der Dichter. In allen literarischen Epochen erscheint der <B>Mond</> immer wieder in den verschiedensten poetischen Landschaften. Ein Tag vor dem Vollmond liest die Schauspielerin Valerie Steinmann Gedichte von Matthias Claudius bis Albert Ehrismann. (A97/SEP.24052 St. Galler Tagblatt, 15.09.1997, Ressort: SGT-PRO (Abk.); TVZDF, 20.15)
+
+Morgen beginnt um 19.33 Uhr die letzte totale Mondfinsternis in diesem Jahrhundert, die in Mitteleuropa beobachtet werden kann. Der <B>Mond</> soll nach Prognosen der Fachleute während dessen einen rötlichen Schimmer aufweisen. Im Gegensatz zur Sonnenfinsternis dauert eine Mondfinsternis länger und kann theoretisch von jedem Punkt der Erde beobachtet werden. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Auf was ist dieser Unterschied zurückzuführen?
+Die Erde ist viermal grösser als der <B>Mond.</>Der Mond ist scheinbar gleich gross wie die Sonne, da diese 400mal grösser, aber im Mittel 390mal weiter von der Erde als der Mond entfernt ist. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+
+Die Erde ist viermal grösser als der Mond. Der <B>Mond</> ist scheinbar gleich gross wie die Sonne, da diese 400mal grösser, aber im Mittel 390mal weiter von der Erde als der Mond entfernt ist. Das wirkt sich auf die Dauer der jeweiligen Finsternis aus. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+
+Die Erde ist viermal grösser als der Mond. Der Mond ist scheinbar gleich gross wie die Sonne, da diese 400mal grösser, aber im Mittel 390mal weiter von der Erde als der <B>Mond</> entfernt ist. Das wirkt sich auf die Dauer der jeweiligen Finsternis aus. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Das wirkt sich auf die Dauer der jeweiligen Finsternis aus. Bei einer totalen Mondfinsternis steht die Erde zwischen Sonne und <B>Mond</> auf einer Linie und wirft einen Schatten auf den Mond, der breiter als der Monddurchmesser ist. Steht der Mond zwischen Sonne und Erde, wie dies bei der Sonnenfinsternis der Fall ist, so wird nur ein schmaler Schatten auf die Erde geworfen. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Das wirkt sich auf die Dauer der jeweiligen Finsternis aus. Bei einer totalen Mondfinsternis steht die Erde zwischen Sonne und Mond auf einer Linie und wirft einen Schatten auf den <B>Mond,</> der breiter als der Monddurchmesser ist. Steht der Mond zwischen Sonne und Erde, wie dies bei der Sonnenfinsternis der Fall ist, so wird nur ein schmaler Schatten auf die Erde geworfen. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Bei einer totalen Mondfinsternis steht die Erde zwischen Sonne und Mond auf einer Linie und wirft einen Schatten auf den Mond, der breiter als der Monddurchmesser ist. Steht der <B>Mond</> zwischen Sonne und Erde, wie dies bei der Sonnenfinsternis der Fall ist, so wird nur ein schmaler Schatten auf die Erde geworfen. Die Dauer der Sonnenfinsternis ist deshalb kurz und kann nur an bestimmten Orten der Erde verfolgt werden. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+
+Auf wenige Minuten genau, denn die Mondbahnen können heute exakt bestimmt werden.
+Der <B>Mond</> bewegt sich von der Erde weg. Hat dies sprübare Folgen für die Berechnung der Ereigniszeit der Finsternis? (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Für die Berechnung ist dies vernachlässigbar. Ausserdem können wir heute exakt messen, wie schnell sich der <B>Mond</> von der Erde entfernt. Denn seit der ersten Mondlandung 1969 steht ein Spiegel auf dem Mond, der jeweils jene Laserstrahlen auf die Erde reflektiert, die von der Erde auf den Mond gesandt wurden. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Ausserdem können wir heute exakt messen, wie schnell sich der Mond von der Erde entfernt. Denn seit der ersten Mondlandung 1969 steht ein Spiegel auf dem <B>Mond,</> der jeweils jene Laserstrahlen auf die Erde reflektiert, die von der Erde auf den Mond gesandt wurden. So kann die Distanz genau gemessen werden. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ Ausserdem können wir heute exakt messen, wie schnell sich der Mond von der Erde entfernt. Denn seit der ersten Mondlandung 1969 steht ein Spiegel auf dem Mond, der jeweils jene Laserstrahlen auf die Erde reflektiert, die von der Erde auf den <B>Mond</> gesandt wurden. So kann die Distanz genau gemessen werden. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+ So kann die Distanz genau gemessen werden.
+Theoretisch müsste der <B>Mond</> während der Finsternis völlig dunkel erscheinen. Fachleute sagen aber voraus, dass der Mond während der Finsternis in einem grünlich-roten Schimmer liegt. (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+
+Theoretisch müsste der Mond während der Finsternis völlig dunkel erscheinen. Fachleute sagen aber voraus, dass der <B>Mond</> während der Finsternis in einem grünlich-roten Schimmer liegt. Auf was ist dies zurückzuführen? (A97/SEP.24132 St. Galler Tagblatt, 15.09.1997, Ressort: TB-WIS (Abk.))
+
+
+Der Stier-Mond deutet auf einen ruhigen Wochenendeinstieg und bringt zunächst eine gewisse Bequemlichkeit und den Wunsch, es sich möglichst gemütlich zu machen. Wenn der <B>Mond</> dann aber am Samstag abend dem Mars gegenüber steht, versetzt ihm das einen Energieschub. Statt vor demFernseher zu sitzen, unternimmt man deshalb aktiv etwas, um überschüssige Energien abzubauen. (A97/SEP.24474 St. Galler Tagblatt, 16.09.1997, Ressort: TB-VGN (Abk.); Neue Perspektiven eröffnen sich)
+
+ Andernfalls können sich innere Unruhe und Gereiztheit unangenehm bemerkbar machen. Am Sonntag morgen wechselt der <B>Mond</> dann ins kontaktfreudige Sternzeichen Zwillinge, und damit ist ein aktiver Tag angesagt.
+Monica Kissling (A97/SEP.24474 St. Galler Tagblatt, 16.09.1997, Ressort: TB-VGN (Abk.); Neue Perspektiven eröffnen sich)
+
+ Anderseits gerade recht zum Unterricht. Auf der Schulwandtafel anstelle des Vorhangs steht geschrieben das Märchen vom hoffenden Kind auf der toten Erde unterm toten Himmel und einem <B>Mond</> wie «faul Holz». Dann erzählt ein Narr das Märchen, darauf der junge Regisseur Andreas von Studnitz den «Woyzeck» entlang diesem Unmärchen. (A97/SEP.25600 St. Galler Tagblatt, 22.09.1997, Ressort: TB-KUL (Abk.); Das Messer beim Wetzen stumpf machen)
+
+ Den besonderen Ton einer Streichmusik fand er verständlicherweise in dieser Form nicht ganz, zumal auch die Spielweise nicht einfach übertragbar ist.
+Mit dem zum Volkslied gewordenen «Der <B>Mond</> ist aufgegangen» von Matthias Claudius mit der vom Dirigenten bearbeiteten Melodie von Johann Abraham Peter Schulz entliessen Chor und Orchester ihr Publikum, das die Kirche bis auf den letzten Platz gefüllt hatte. (A97/SEP.25804 St. Galler Tagblatt, 23.09.1997, Ressort: AT-KAP (Abk.); Von der Renaissance bis zur Klassik)
+
+
+23 Männerriegler des Turnvereins Gossau erlebten am vergangenen Freitag eine kameradschaftliche, wunderbare Abendwanderung auf die Hundwiler Höhe.
+Der Aufstieg ab Ramsten begann an einem schönen Abend, und bald schon waren der <B>Mond</> und die Sterne Begleiter der Turnerschar. Diese erreichte schon nach knapp Dreiviertelstunden die Hundwiler Höhe. (A97/SEP.25821 St. Galler Tagblatt, 23.09.1997, Ressort: TB-GO (Abk.); Bei Mondschein auf die Hundwiler Höhe)
+
+ Die Tage werden nun rasch kürzer und zwar von 11 Stunden 42 Minuten auf 10 Stunden und 5 Minuten.
+<B>Mond:</> Am 1. und 31. Oktober ist Neumond. Vollmond ist in diesem Monat am 16. Am 15. Oktober befindet sich der Mond ganz nahe (zwei Vollmondbreiten) beim Planeten Saturn. (A97/SEP.26993 St. Galler Tagblatt, 29.09.1997, Ressort: TB-WIS (Abk.); Auf einer Linie: Saturn, Sonne, Erde)
+
+
+Mond: Am 1. und 31. Oktober ist Neumond. Vollmond ist in diesem Monat am 16. Am 15. Oktober befindet sich der <B>Mond</> ganz nahe (zwei Vollmondbreiten) beim Planeten Saturn. Für Beobachter die den Ring-planeten am Himmel bisher nicht gefunden haben, ist der Mond ein auffälliger Wegweiser. (A97/SEP.26993 St. Galler Tagblatt, 29.09.1997, Ressort: TB-WIS (Abk.); Auf einer Linie: Saturn, Sonne, Erde)
+
+ Vollmond ist in diesem Monat am 16. Am 15. Oktober befindet sich der Mond ganz nahe (zwei Vollmondbreiten) beim Planeten Saturn. Für Beobachter die den Ring-planeten am Himmel bisher nicht gefunden haben, ist der <B>Mond</> ein auffälliger Wegweiser.
+Die Planeten: Merkur ist während der ersten Oktobertage nur noch kurze Zeit bei Dämmerungsbeginn knapp über dem Osthorizont sichtbar. (A97/SEP.26993 St. Galler Tagblatt, 29.09.1997, Ressort: TB-WIS (Abk.); Auf einer Linie: Saturn, Sonne, Erde)
+
+
+Die Woche steht unter teilweise widersprüchlichen Konstellationen, doch dürften sich die harmonisierenden Einflüsse durchsetzen, weil sie überwiegen. Die ausgleichenden Energien verdanken wir hauptsächlich dem zunehmenden Einfluss des Sternzeichens Waage: Dort findet nämlich morgen abend ein Neumond statt, das heisst, Sonne und <B>Mond</> stehen dann zusammen in der Waage. Und am Donnerstagmorgen wechselt auch noch Merkur, der Kommunikationsplanet, ins kompromissbereite Sternzeichen Waage. (A97/SEP.27138 St. Galler Tagblatt, 30.09.1997, Ressort: TB-VGN (Abk.); Harmoniebestrebungen trotz harter Forderungen)
+
+
+Blauringlager im Schülerferienhaus Vorderer Schwäbrig über Gais / Appenzell
+Wunderschön, mit Blick auf den Säntis und neben riesigen alten Ahornbäumen, ist das Haus gelegen, das sich Karin Diethelm und die fünf Blauringleiterinnen ausgesucht haben: Dort verbringen 24 Kinder eine Woche mit dem peruanischen Märchen von «Sonne und <B>Mond»</> und erleben den Wind der Anden.
+* Gretel seebass (A97/OKT.27541 St. Galler Tagblatt, 02.10.1997, Ressort: TB-BIZ (Abk.); «Den Wind der Anden erleben»)
+
+
+Der Sonntag begann mit Spielen. Am Nachmittag hielt Karin Diethelm einen Wortgottesdienst mit dem peruanischen Märchen von «Sonne und <B>Mond»,</> das im Gegensatz zu deutschen Volksmärchen kein «happy end» kennt, es sei denn, man kann sich damit versöhnen, dass ein liebendes Paar unter Opferung des eigenen Lebens Freude und Licht in sein Dorf zurückbringt. Der junge Fischer schenkt den Bewohnern, die bisher nur Sterne kannten und durch eigene Habgier und Neid immer mehr im Dunkeln leben mussten, das Sonnenlicht. (A97/OKT.27541 St. Galler Tagblatt, 02.10.1997, Ressort: TB-BIZ (Abk.); «Den Wind der Anden erleben»)
+
+ Von seiner Liebe beflügelt, springt er von Stern zu Stern und sammelt leuchtende Sternensteine, die er auf seinem Schild, der Sonne, befestigt. Als er von oben seine verlassene Frau traurig vor der Hütte stehen sieht, wirft er ihr sein Herz zu, das sich in den <B>Mond</> verwandelt. Sie weint und wird zum Fluss, der ins Meer fliesst. (A97/OKT.27541 St. Galler Tagblatt, 02.10.1997, Ressort: TB-BIZ (Abk.); «Den Wind der Anden erleben»)
+
+ Sie weint und wird zum Fluss, der ins Meer fliesst. Wenn sich der <B>Mond</> in ihm spiegelt, sind die Liebenden für kurze Zeit vereint.
+Sternen-Hüpflauf (A97/OKT.27541 St. Galler Tagblatt, 02.10.1997, Ressort: TB-BIZ (Abk.); «Den Wind der Anden erleben»)
+
+
+Für eine Reihe von Jahren blieb die Sowjetunion zwar Weltraum-Macht Nummer eins. Am 12. April 1961 beispielsweise beförderten sie den ersten Menschen ins All, Fliegermajor Juri Gagarin. Doch holten die Amerikaner unter dem neuen Präsidenten John F. Kennedy zum «Gegenschlag» aus, indem sie eine bemannte Landung auf dem <B>Mond</> noch vor dem Jahr 1970 zu ihrem Ziel erklärten.
+Es fliesst viel Geld (A97/OKT.27595 St. Galler Tagblatt, 02.10.1997, Ressort: TB-WIS (Abk.); Sputnik: Ein Fiasko als Aufbruch)
+
