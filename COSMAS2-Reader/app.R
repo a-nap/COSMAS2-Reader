@@ -105,11 +105,12 @@ server <- function(input, output) {
             unlist()
         
         # Creating data frame for export ------------------------------------------
-        data <- data %>%
+        data <- 
+            data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
             select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
-            mutate_all(list(~na_if(.,"")))
+            replace_na(list(Precontext = "", Postcontext = ""))
         
         return(data)
     })
