@@ -15,14 +15,26 @@ ui <- fluidPage(
 
     sidebarLayout(
         sidebarPanel(
-            # Input raw COSMAS CSV-file
+            h3("Your file must contain the Key Word in Context (KWIC) information."),
+            # Input raw COSMAS text file
             fileInput(inputId = "raw.file",
-                      label = "Upload a text file",
+                      label = "Upload a text file (.txt or .TXT, max. 30 MB)",
                       buttonLabel = "Browse",
-                      placeholder = "No file selected",
-                      accept = c("text/plain", ".txt", "text")),
+                      placeholder = "No file selected"),
+            radioButtons("corpus.position", "Where is the information about the corpus source?",
+                         c("After token" = "after",
+                           "Before token" = "before")),
+            radioButtons("context.type", "What is the token's context?",
+                         c("Paragraph" = "paragraph",
+                           "Sentence" = "one.sentence",
+                           "Word" = "one.word",
+                           "Letter" = "one.letter")),
+            radioButtons("korpusansicht", "Is the 'Korpusansicht' included?",
+                         c("No" = "no.corpus",
+                           "Yes" = "yes.corpus")),
+            actionButton("go", "Submit", class = "btn-success", icon = shiny::icon("gears")),
             hr(),
-            p(strong("Download data as CSV table")), # FIXME why does .TXT not work?
+            p(strong("Download data as CSV table")),
             # Download data
             downloadButton(outputId = "downloadData", 
                            label = "Download",
@@ -37,12 +49,9 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-    # Find unique tokens
-    mytokens = reactiveVal()
-    # Words appearing in target sentence
-    mywords = reactiveVal()
+    options(shiny.maxRequestSize=100*1024^2) 
     # Process data file and create a table
-    mydata <- reactive({
+    mydata <- eventReactive(input$go, {
         inFile <- input$raw.file
         if (is.null(inFile))
             return(NULL)
@@ -126,7 +135,7 @@ server <- function(input, output, session) {
             data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-            select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
+            select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext, Sources) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
 
         return(sentence_data)
@@ -144,8 +153,9 @@ server <- function(input, output, session) {
         DT::datatable(token_count)
     })
     
-    # Make a plot
+    # Make a word cloud plot
     output$word.cloud <- renderWordcloud2({
+        # Filter the target sentence
         unique_words <- mydata() %>%
             select(Sentence) %>%
             str_to_sentence("de") %>%
@@ -154,16 +164,17 @@ server <- function(input, output, session) {
             str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
             data.frame()
         colnames(unique_words) <- "word"
+        # Calculate word frequencies
         unique_words <- unique_words %>%
             count(word, sort=TRUE)
-        
+        # Make word cloud
         wordcloud2(data=unique_words, size=1.6, color='random-dark', shape = "circle")
     })
     
     # Download table
     output$downloadData <- downloadHandler(
         filename = function() {
-            paste("Korpusdaten-", Sys.Date(), ".csv", sep = "")
+            paste("CorpusData-", Sys.Date(), ".csv", sep = "")
         },
         content = function(file) {
             write.csv(mydata(), file, row.names = FALSE)

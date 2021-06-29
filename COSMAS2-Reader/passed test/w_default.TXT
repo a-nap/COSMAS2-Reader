@@ -1,0 +1,64 @@
+© Leibniz-Institut für Deutsche Sprache, Mannheim
+COSMAS II-Server, C2API-Version 4.20.4 - 07.06.2021
+________________________________________________________________________________
+
+Datum         : Dienstag, den 29. Juni 2021, 20:28:52
+Archiv        : W - Archiv der geschriebenen Sprache
+Korpus        : W-öffentlich - alle öffentlichen Korpora des Archivs W (mit Neuakquisitionen)
+Archiv-Release: Deutsches Referenzkorpus DeReKo-2021-I
+Suchanfrage   : Sonnen?t*
+Suchoptionen  : Ei+Ri+Di, Flex
+Ergebnis      : 7 Treffer
+
+
+KWIC (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Zeilen: 7
+Angezeigter Kontext    : 1 Satz links, 2 Sätze rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+FOC11                      Gute Nachricht für <B>Sonnen-Tanker</> Die Solarförderung wird vorerst
+M07     Fanfarenzugs ließ die Minigarde einen <B>Sonnen-Tanz</> folgen, der alle Besucher erwärmte.
+NKU02          aus der Biedermeierzeit,  eine <B>Sonnen-Taschen-Uhr</> und eine Atmos-Uhr, die sich
+NUN99           seinen Körper anstrahlt, sein <B>Sonnen-Tatoo</> um den Bauchnabel die Blicke
+R97  entrichten nicht nur zwölf Gemeinden den <B>Sonnen-Tarif,</> in acht weiteren Kommunen liegen
+Z69       und Ramona saßen nebeneinander beim <B>Sonnen-Tanz.</> Jacques saß neben Elsa und Charles
+FLT08  und sich für eine Gorleben-Demo dieses <B>Sonnen-T-Shirt</> ausleihen wollte. Ich hab auch
+
+
+Belege (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Belege: 7
+Angezeigter Kontext    : 1 Absatz links, 1 Absatz rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+Energieriese E.on startet im Herbst einen Test mit vergleichbaren Speichern, aber anderem Zweck. Die Geräte in Kellern von Privatleuten sollen E.on auch Neuinvestitionen ersparen. Statt zu Zeiten mit Spitzenverbrauch neue Kraftwerke anzuwerfen, sollen dann die Privat-Speicher ihre Sonnenenergie ins Netz entladen. 
+Gute Nachricht für <B>Sonnen-Tanker</> Die Solarförderung wird vorerst nicht gekürzt. Das nützt auch Erfinder Armin Schmiegel, der den Atomausstieg zum Selbermachen propagiert: tagsüber die Sonne anzapfen, abends und morgens den eigenen Strom verbrauchen. Sein Speicher könnte der wirtschaftlichen Energie-Autarkie für Privatleute den Weg bereiten (FOC11/JUN.00108 FOCUS, 20.06.2011, S. 116; Die Sonne in der Kiste)
+
+Die Krapfen beim Kräppelkaffee des Karnevalvereins Insulana Ilvesheim (KVI) waren zwar nicht gefüllt, aber in der Veranstaltung selbst war Vieles drin: Mehr als fünf Stunden nahmen die Akteure die Mehrzweckhallen-Bühne in Beschlag, um beste Laune zu erzeugen. Die Wogen der Begeisterung schwappten hoch. Der Kräppelkaffee, musikalisch begleitet vom Duo Rendezvous, stand einmal mehr für eine Nonstop-Super-Stimmung-Präsentation.
+Ein buntes Bild bot sich dem ausverkauften Haus, als die KVIler die Bühne eroberten. KVI-Vorsitzender Gebhard Rudolph und die Leiterin der Frauenabteilung, Regine Horvat, begrüßten die große Narrenschar. Die Hoheiten Nicole I. von Technik und Tanz und Kinderprinzessin Larissa I. vom närrischen Haus wünschten dem Publikum unvergessliche Stunden. Diese sollten folgen. Und sie wurden schwungvoll durch die Kurpfälzer Trabanten eröffnet. Dem Auftritt des Heidelberger Fanfarenzugs ließ die Minigarde einen <B>Sonnen-Tanz</> folgen, der alle Besucher erwärmte. Diese hörten dann Trompetenklänge, die ein Clown ausstieß. Doch der Troubadour (Werner Strobel) ließ es dabei nicht bewenden. Er überzeugte mit einem Potpourri an Unterhaltungsformen: Musizieren, Singen, Plaudern, verbunden mit entsprechender Mimik, kamen beim Publikum bestens an.
+Eingeschaltet wurde die populäre Sendung "Insulana sucht die Superprinzessin" (ISDSP). Moderator (Günter Tschitschke) präsentierte mit Assistentin (Sabrina Hammer) drei Kandidatinnen, die um die Gunst von Nina Hagen (Melanie Jäger), Dieter Bohlen (Christian Kliebisch) und Prinzessinnen-Kenner Rudolph buhlten. Es siegte schließlich nach hartem Wettbewerb Jacqueline (Isabelle Vorstoffel) von der T-Schönau vor der Kerwe-Gretel (Nicole Rensch) und Putzfrau Eiche (Simone Seemann). Somit wär ein großes Problem gelöst: Der KVI hat für die Saison 2007/08 eine Prinzessin. (M07/FEB.04801 Mannheimer Morgen, 20.02.2007; Der Karnevalverein Insulana findet die Superprinzessin)
+
+eine goldene Rokoko-Uhr, eine Wiener Rahmenuhr aus der Biedermeierzeit, 
+eine <B>Sonnen-Taschen-Uhr</> und eine Atmos-Uhr, die sich selber aufzieht, also 
+"von der Luft lebt". (NKU02/APR.09210 Nordkurier, 27.04.2002; Insel-Mann kann die Zeit anhalten)
+
+Michi liebt es, wenn das gleißende Scheinwerferlicht seinen Körper anstrahlt, sein <B>Sonnen-Tatoo</> um den Bauchnabel die Blicke kreischender Mädchen einfängt. Es ist sehr heiß auf der Bühne, dem ersehnten Ort, an dem sein Herz für Sekunden fast stillzustehen scheint. Denn in diesen Sekunden verscheucht die Angst vor dem Ungewissen das Lampenfieber. "Everybody get down!" ist nicht nur eine Aufforderung zur Massenfete, die ein Teeniestar durch die Boxen jagt, bevor Blümchen oder die "Backstreet Boys" die Show abziehen. "Everbody get down!", der Appell auf dem Cover der ersten eigenen, selbstproduzierten CD wird zur makabren Realität, wenn Mädchen ohnmächtig durch die Massen getragen werden.
+Michi ist schön. Freundlich, ehrlich, zutraulich. Nur lächeln, das darf der 23jährige selten, wenn Modefotografen ihn auf das Hochglanzpapier von Magazinen bannen. (NUN99/MAI.01773 Nürnberger Nachrichten, 22.05.1999, S. 12; Liebe und Laufsteg - Model, Sänger und Dr. Love: Multitalent aus Nürnberg)
+
+Das Konzept, das unter der Bezeichnung Aachener Modell die Runde macht, haben die Solar-Aktivisten Anfang der neunziger Jahre zur Förderung regenerativer Energien entwickelt. Danach erhalten private Photovoltaik- und Windkraftanlagen-Betreiber eine Vergütung für den Strom, den sie ins öffentliche Netz einspeisen. Diese fängt die hohen Investitionen innerhalb von 20 Jahren auf.
+Die Summe schreibt der nordrhein-westfälische Erlaß fest auf zwei Mark für jede gelieferte Kilowattstunde Solarstrom sowie maximal 35 Pfennig aus der Windkraft. Als Ausgleich für die höheren Tarife gestattete das Düsseldorfer Wirtschaftsministerium den Versorgern im Lande, ihre Preise bis zu ein Prozent anzuheben. Von dieser Möglichkeit haben nach drei Jahren nur die wenigsten der 200 Stadtwerke zwischen Rhein und Weser Gebrauch gemacht. Dagegen entrichten nicht nur zwölf Gemeinden den <B>Sonnen-Tarif,</> in acht weiteren Kommunen liegen zustimmende Beschlüsse vor. Werden die Städte hinzugerechnet, die sich für einen Fördermix aus Zuschuß und erhöhter Einspeisevergütung entschieden haben, erhöht sich die Zahl auf etwa 25 in dem Land und bundesweit auf 45.
+Auch immer mehr Betreiber streben zur Sonne. So waren in Aachen Ende März 55 private Anlagen mit 220 Kilowattstunden Höchstleistung in Betrieb. Für weitere 730 Kilowattstunden liegen nach Auskunft der Stadtwerke derzeit Anfragen vor. "Aachen ist insofern ein glückliches Beispiel", sagt der SFV-Geschäftsführer, "da sich hier fünf neue Solar-Installationsbetriebe gegründet haben und so neue Arbeitsplätze entstanden sind." (R97/JUN.42425 Frankfurter Rundschau, 05.06.1997, S. 15, Ressort: WIRTSCHAFT; Kostendeckende Vergütung hilft Sonnenenergie-Anlagen / Strommultis leisten Widerstand)
+
+VI. 
+Jacques, Elsa, Charles und Ramona saßen nebeneinander beim <B>Sonnen-Tanz.</> Jacques saß neben Elsa und Charles neben Ramona. Natürlich saß Charles auch neben Elsa, aber er beugte sich meist zu Ramona hinüber. Es war schwer auszumachen, was er beabsichtigte. Er nahm die Hände nicht aus den Taschen. 
+- Wie steht es mit deinem Kampf, Jacques?  (Z69/DEZ.00096 Die Zeit, 05.12.1969, S. 22; Stadtleben)
+
+Gibt es Grüne, die Ihre Sachen tragen? 
+Michalsky: Ja. Und ich hab auch viele Anfragen bekommen. Besonders von einer, die mich permanent unbedingt treffen will und sich für eine Gorleben-Demo dieses <B>Sonnen-T-Shirt</> ausleihen wollte. Ich hab auch jemanden aus der FDP, der mich treffen will. Das finde ich langsam ein bisschen befremdlich. 
+Bei dieser Show sah man als Dekoration ein 68er-Demo-Foto, was war das für eine Szene?  (FLT08/NOV.00439 Falter, 19.11.2008, S. 44; &#8216;Eine Haltung ist kein Accessoire&#8217;)
+

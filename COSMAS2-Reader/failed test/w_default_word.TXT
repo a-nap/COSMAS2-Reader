@@ -1,0 +1,53 @@
+© Leibniz-Institut für Deutsche Sprache, Mannheim
+COSMAS II-Server, C2API-Version 4.20.4 - 07.06.2021
+________________________________________________________________________________
+
+Datum         : Dienstag, den 29. Juni 2021, 20:29:49
+Archiv        : W - Archiv der geschriebenen Sprache
+Korpus        : W-öffentlich - alle öffentlichen Korpora des Archivs W (mit Neuakquisitionen)
+Archiv-Release: Deutsches Referenzkorpus DeReKo-2021-I
+Suchanfrage   : Sonnen?t*
+Suchoptionen  : Ei+Ri+Di, Flex
+Ergebnis      : 7 Treffer
+
+
+KWIC (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Zeilen: 7
+Angezeigter Kontext    : 1 Satz links, 2 Sätze rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+FOC11                      Gute Nachricht für <B>Sonnen-Tanker</> Die Solarförderung wird vorerst
+M07     Fanfarenzugs ließ die Minigarde einen <B>Sonnen-Tanz</> folgen, der alle Besucher erwärmte.
+NKU02          aus der Biedermeierzeit,  eine <B>Sonnen-Taschen-Uhr</> und eine Atmos-Uhr, die sich
+NUN99           seinen Körper anstrahlt, sein <B>Sonnen-Tatoo</> um den Bauchnabel die Blicke
+R97  entrichten nicht nur zwölf Gemeinden den <B>Sonnen-Tarif,</> in acht weiteren Kommunen liegen
+Z69       und Ramona saßen nebeneinander beim <B>Sonnen-Tanz.</> Jacques saß neben Elsa und Charles
+FLT08  und sich für eine Gorleben-Demo dieses <B>Sonnen-T-Shirt</> ausleihen wollte. Ich hab auch
+
+
+Belege (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Belege: 7
+Angezeigter Kontext    : 1 Wort links, 1 Wort rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+für <B>Sonnen-Tanker</> Die (FOC11/JUN.00108 FOCUS, 20.06.2011, S. 116; Die Sonne in der Kiste)
+
+einen <B>Sonnen-Tanz</> folgen, (M07/FEB.04801 Mannheimer Morgen, 20.02.2007; Der Karnevalverein Insulana findet die Superprinzessin)
+
+
+eine <B>Sonnen-Taschen-Uhr</> und (NKU02/APR.09210 Nordkurier, 27.04.2002; Insel-Mann kann die Zeit anhalten)
+
+sein <B>Sonnen-Tatoo</> um (NUN99/MAI.01773 Nürnberger Nachrichten, 22.05.1999, S. 12; Liebe und Laufsteg - Model, Sänger und Dr. Love: Multitalent aus Nürnberg)
+
+den <B>Sonnen-Tarif,</> in (R97/JUN.42425 Frankfurter Rundschau, 05.06.1997, S. 15, Ressort: WIRTSCHAFT; Kostendeckende Vergütung hilft Sonnenenergie-Anlagen / Strommultis leisten Widerstand)
+
+beim <B>Sonnen-Tanz.</> Jacques (Z69/DEZ.00096 Die Zeit, 05.12.1969, S. 22; Stadtleben)
+
+dieses <B>Sonnen-T-Shirt</> ausleihen (FLT08/NOV.00439 Falter, 19.11.2008, S. 44; &#8216;Eine Haltung ist kein Accessoire&#8217;)
+

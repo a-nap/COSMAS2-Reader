@@ -1,0 +1,57 @@
+© Leibniz-Institut für Deutsche Sprache, Mannheim
+COSMAS II-Server, C2API-Version 4.20.4 - 07.06.2021
+________________________________________________________________________________
+
+Datum         : Dienstag, den 29. Juni 2021, 20:32:36
+Archiv        : W - Archiv der geschriebenen Sprache
+Korpus        : W-öffentlich - alle öffentlichen Korpora des Archivs W (mit Neuakquisitionen)
+Archiv-Release: Deutsches Referenzkorpus DeReKo-2021-I
+Suchanfrage   : Sonnen?t*
+Suchoptionen  : Ei+Ri+Di, Flex
+Ergebnis      : 7 Treffer
+
+
+KWIC (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Zeilen: 7
+Angezeigter Kontext    : 1 Satz links, 2 Sätze rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+FOC11                      Gute Nachricht für <B>Sonnen-Tanker</> Die Solarförderung wird vorerst
+M07     Fanfarenzugs ließ die Minigarde einen <B>Sonnen-Tanz</> folgen, der alle Besucher erwärmte.
+NKU02          aus der Biedermeierzeit,  eine <B>Sonnen-Taschen-Uhr</> und eine Atmos-Uhr, die sich
+NUN99           seinen Körper anstrahlt, sein <B>Sonnen-Tatoo</> um den Bauchnabel die Blicke
+R97  entrichten nicht nur zwölf Gemeinden den <B>Sonnen-Tarif,</> in acht weiteren Kommunen liegen
+Z69       und Ramona saßen nebeneinander beim <B>Sonnen-Tanz.</> Jacques saß neben Elsa und Charles
+FLT08  und sich für eine Gorleben-Demo dieses <B>Sonnen-T-Shirt</> ausleihen wollte. Ich hab auch
+
+
+Belege (unsortiert)
+
+Anz. Treffer           : 7
+Anz. exportierte Belege: 7
+Angezeigter Kontext    : 1 Satz links, 1 Satz rechts
+Kontext umschließt     : gesamten Treffer
+________________________________________________________________________________
+
+ 
+Gute Nachricht für <B>Sonnen-Tanker</> Die Solarförderung wird vorerst nicht gekürzt. Das nützt auch Erfinder Armin Schmiegel, der den Atomausstieg zum Selbermachen propagiert: tagsüber die Sonne anzapfen, abends und morgens den eigenen Strom verbrauchen. (FOC11/JUN.00108 FOCUS, 20.06.2011, S. 116)
+
+ Und sie wurden schwungvoll durch die Kurpfälzer Trabanten eröffnet. Dem Auftritt des Heidelberger Fanfarenzugs ließ die Minigarde einen <B>Sonnen-Tanz</> folgen, der alle Besucher erwärmte. Diese hörten dann Trompetenklänge, die ein Clown ausstieß. (M07/FEB.04801 Mannh. Morgen, 20.02.2007)
+
+
+eine goldene Rokoko-Uhr, eine Wiener Rahmenuhr aus der Biedermeierzeit, 
+eine <B>Sonnen-Taschen-Uhr</> und eine Atmos-Uhr, die sich selber aufzieht, also 
+"von der Luft lebt". (NKU02/APR.09210 Nordkurier, 27.04.2002)
+
+Michi liebt es, wenn das gleißende Scheinwerferlicht seinen Körper anstrahlt, sein <B>Sonnen-Tatoo</> um den Bauchnabel die Blicke kreischender Mädchen einfängt. Es ist sehr heiß auf der Bühne, dem ersehnten Ort, an dem sein Herz für Sekunden fast stillzustehen scheint. (NUN99/MAI.01773 NN, 22.05.1999, S. 12)
+
+ Von dieser Möglichkeit haben nach drei Jahren nur die wenigsten der 200 Stadtwerke zwischen Rhein und Weser Gebrauch gemacht. Dagegen entrichten nicht nur zwölf Gemeinden den <B>Sonnen-Tarif,</> in acht weiteren Kommunen liegen zustimmende Beschlüsse vor. Werden die Städte hinzugerechnet, die sich für einen Fördermix aus Zuschuß und erhöhter Einspeisevergütung entschieden haben, erhöht sich die Zahl auf etwa 25 in dem Land und bundesweit auf 45. (R97/JUN.42425 Frankf. Rundschau, 05.06.1997, S. 15)
+
+ 
+Jacques, Elsa, Charles und Ramona saßen nebeneinander beim <B>Sonnen-Tanz.</> Jacques saß neben Elsa und Charles neben Ramona. (Z69/DEZ.00096 ZEIT, 05.12.1969, S. 22)
+
+ Und ich hab auch viele Anfragen bekommen. Besonders von einer, die mich permanent unbedingt treffen will und sich für eine Gorleben-Demo dieses <B>Sonnen-T-Shirt</> ausleihen wollte. Ich hab auch jemanden aus der FDP, der mich treffen will. (FLT08/NOV.00439 Falter, 19.11.2008, S. 44)
+
