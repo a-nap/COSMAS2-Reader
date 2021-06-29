@@ -14,31 +14,42 @@ library(stringr)
 library(dplyr)
 library(readr)
 library(purrr)
+library(wordcloud2)
 
 # Frontend
 ui <- fluidPage(
 # Application title
-    titlePanel("COSMAS II Exportdatei in Tabelle umwandeln"),
+    titlePanel("Convert a COSMAS II export file to table"),
 
     sidebarLayout(
         sidebarPanel(
             # Input raw COSMAS CSV-file
             fileInput(inputId = "raw.file",
-                      label = "TXT-Datei einlesen",
-                      buttonLabel = "Durchsuchen",
-                      placeholder = "Noch keine Datei",
+                      label = "Upload a text file",
+                      buttonLabel = "Browse",
+                      placeholder = "No file selected",
                       accept = c("text/plain", ".txt", "text")),
+            hr(),
+            p(strong("Download data as CSV table")),
             # FIXME why does .TXT not work?
-            downloadButton("downloadData", "Download")
+            downloadButton(outputId = "downloadData", 
+                           label = "Download",
+                           icon = shiny::icon("download")),
         ),
         mainPanel(
-            tableOutput("table.output")
+            tabsetPanel(tabPanel("Table", DT::dataTableOutput("table.output")),
+                        tabPanel("Tokens", DT::dataTableOutput("unique.tokens")),
+                        tabPanel("Cloud", renderPlot("word.cloud")))
         )
     )
 )
 
-server <- function(input, output) {
-    
+server <- function(input, output, session) {
+    # Find unique tokens
+    mytokens = reactiveVal()
+    # Words appearing in target sentence
+    mywords = reactiveVal()
+    # Process data file and create a table
     mydata <- reactive({
         inFile <- input$raw.file
         if (is.null(inFile))
@@ -58,15 +69,29 @@ server <- function(input, output) {
         Export_Date <- sections[[1]][2] %>%
             str_extract(regex("(?<=\\n\\nDatum).+(?=\\nArchiv)")) %>%
             str_extract(regex("(?<=:\\s)(.*)$"))
+        
         # Save the search phrase
         phrase <- sections[[1]][2] %>%
             str_extract(regex("(?<=\\nSuchanfrage).+(?=\\nSuchoptionen)")) %>%
             str_extract(regex("(?<=:\\s)(.*)$"))
         
         # Sentences and their information -----------------------------------------
+        # Abbreviated corpus IDs
+        corpora <- sections[[1]][3]
+        corporaID <- corpora %>% 
+            str_split("\\n") %>%
+            unlist() %>%
+            head(-7) %>%
+            str_extract(regex('(^\\w+)\\s(?=.*$)')) %>%
+            str_trim() %>%
+            str_subset(regex(".*")) %>%
+            unique() %>%
+            str_c(collapse = "|")
+        
+        # All sentences
         all_sentences <- sections[[1]][4]
         text_parts <- all_sentences %>%
-            str_match_all(regex("(.*?)<B>(.+?)</>(.*?)\\(((?:A09|A97)/.*?)\\)\\s*\\n", 
+            str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
                                 dotall = TRUE))
         
         # Source information
@@ -75,7 +100,9 @@ server <- function(input, output) {
         # Tokens
         data$Token <- text_parts[[1]][,3] %>%
             str_trim()
-        
+        mytokens(data %>%
+                count(Token, sort=TRUE))
+
         # Context sentence BEFORE token sentence
         data$Precontext <- text_parts[[1]][,2] %>%
             str_extract_all(boundary("sentence")) %>%
@@ -103,22 +130,45 @@ server <- function(input, output) {
             map(function(x) {nth(x,2)} ) %>%
             str_trim() %>%
             unlist()
-        
+
         # Creating data frame for export ------------------------------------------
-        data <- 
+        sentence_data <- 
             data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
             select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
+
+        # Parsing individual words
+        unique_words <- sentence_data %>%
+            select(Sentence) %>%
+            str_to_sentence("de") %>%
+            str_extract_all(boundary("word")) %>%
+            unlist() %>%
+            str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
+            data.frame()
+        colnames(unique_words) <- "word"
+        unique_words <- unique_words %>%
+            count(word, sort=TRUE)
+        # mywords(unique_words)
+
+        return(sentence_data)
+    })
+    # Output table
+    output$table.output <- DT::renderDataTable({
+        DT::datatable(mydata(), options = list(orderClasses = TRUE))
+    })
+    # Print unique tokens
+    output$unique.tokens <- DT::renderDataTable({
+        DT::datatable(mytokens())
+    })
+    # Make a word cloud
+    output$word.cloud <- renderPlot({
+        hist(rnorm(100))
         
-        return(data)
+    #     wordcloud2(data=mywords(), size=1.6, color='random-dark', shape = "circle")
     })
-    
-    output$table.output <- renderTable({
-        mydata()
-    })
-    
+    # Download table
     output$downloadData <- downloadHandler(
         filename = function() {
             paste("Korpusdaten-", Sys.Date(), ".csv", sep = "")
