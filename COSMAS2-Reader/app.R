@@ -30,7 +30,7 @@ ui <- fluidPage(
                            "Sentence" = "one.sentence",
                            "Word" = "one.word",
                            "Letter" = "one.letter")),
-            radioButtons("korpusansicht", "Is the 'Korpusansicht' included?",
+            radioButtons("korpusansicht", "Is the 'Korpusansicht' (e.g. Quellenansicht, Dokumentansicht, Korpusansicht) included?",
                          c("No" = "no.corpus",
                            "Yes" = "yes.corpus")),
             actionButton("go", "Submit", class = "btn-success", icon = shiny::icon("gears")),
@@ -105,7 +105,7 @@ server <- function(input, output, session) {
         
         if (korpusansicht_present == 1) {
             all_sentences <- all_sentences %>%
-                str_split(regex("\\nKorpus-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+                str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
                 unlist()
             text_parts <- all_sentences[1] %>%
                 str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
