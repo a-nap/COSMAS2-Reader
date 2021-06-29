@@ -1,12 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 # Backend
 library(shiny)
 library(tidyr)
@@ -15,6 +6,7 @@ library(dplyr)
 library(readr)
 library(purrr)
 library(wordcloud2)
+
 
 # Frontend
 ui <- fluidPage(
@@ -30,8 +22,8 @@ ui <- fluidPage(
                       placeholder = "No file selected",
                       accept = c("text/plain", ".txt", "text")),
             hr(),
-            p(strong("Download data as CSV table")),
-            # FIXME why does .TXT not work?
+            p(strong("Download data as CSV table")), # FIXME why does .TXT not work?
+            # Download data
             downloadButton(outputId = "downloadData", 
                            label = "Download",
                            icon = shiny::icon("download")),
@@ -39,7 +31,7 @@ ui <- fluidPage(
         mainPanel(
             tabsetPanel(tabPanel("Table", DT::dataTableOutput("table.output")),
                         tabPanel("Tokens", DT::dataTableOutput("unique.tokens")),
-                        tabPanel("Cloud", renderPlot("word.cloud")))
+                        tabPanel("Word cloud", wordcloud2Output("word.cloud")))
         )
     )
 )
@@ -100,8 +92,6 @@ server <- function(input, output, session) {
         # Tokens
         data$Token <- text_parts[[1]][,3] %>%
             str_trim()
-        mytokens(data %>%
-                count(Token, sort=TRUE))
 
         # Context sentence BEFORE token sentence
         data$Precontext <- text_parts[[1]][,2] %>%
@@ -139,8 +129,24 @@ server <- function(input, output, session) {
             select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
 
-        # Parsing individual words
-        unique_words <- sentence_data %>%
+        return(sentence_data)
+    })
+    
+    # Output a table with all data
+    output$table.output <- DT::renderDataTable({
+        DT::datatable(mydata(), options = list(orderClasses = TRUE))
+    })
+    
+    # Output table with unique tokens and their frequencies
+    output$unique.tokens <- DT::renderDataTable({
+        token_count <- mydata() %>%
+                     count(Token, sort=TRUE)
+        DT::datatable(token_count)
+    })
+    
+    # Make a plot
+    output$word.cloud <- renderWordcloud2({
+        unique_words <- mydata() %>%
             select(Sentence) %>%
             str_to_sentence("de") %>%
             str_extract_all(boundary("word")) %>%
@@ -150,24 +156,10 @@ server <- function(input, output, session) {
         colnames(unique_words) <- "word"
         unique_words <- unique_words %>%
             count(word, sort=TRUE)
-        # mywords(unique_words)
-
-        return(sentence_data)
-    })
-    # Output table
-    output$table.output <- DT::renderDataTable({
-        DT::datatable(mydata(), options = list(orderClasses = TRUE))
-    })
-    # Print unique tokens
-    output$unique.tokens <- DT::renderDataTable({
-        DT::datatable(mytokens())
-    })
-    # Make a word cloud
-    output$word.cloud <- renderPlot({
-        hist(rnorm(100))
         
-    #     wordcloud2(data=mywords(), size=1.6, color='random-dark', shape = "circle")
+        wordcloud2(data=unique_words, size=1.6, color='random-dark', shape = "circle")
     })
+    
     # Download table
     output$downloadData <- downloadHandler(
         filename = function() {
