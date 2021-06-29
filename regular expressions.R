@@ -7,7 +7,8 @@ library(wordcloud2)
 
 # Reading in the raw COSMAS file
 # FIXME  add encoding options "latin1" and "UTF-8"
-raw.file <- read_file("test.txt", locale(encoding="latin1"))
+# raw.file <- read_file("test.txt", locale(encoding="latin1"))
+raw.file <- read_file("w_sentence_korpusansicht.TXT", locale(encoding="latin1"))
 
 # Metadata ----------------------------------------------------------------
 # Save COSMAS version 
@@ -41,6 +42,11 @@ corporaID <- corpora %>%
   str_c(collapse = "|")
 
 all_sentences <- sections[[1]][4]
+all_sentences %>%
+  str_split(regex("\\nKorpus-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+  unlist()
+
+  
 text_parts <- all_sentences %>%
   str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
                       dotall = TRUE))

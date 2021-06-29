@@ -18,12 +18,13 @@ ui <- fluidPage(
             h3("Your file must contain the Key Word in Context (KWIC) information."),
             # Input raw COSMAS text file
             fileInput(inputId = "raw.file",
-                      label = "Upload a text file (.txt or .TXT, max. 30 MB)",
+                      label = "Upload a plain text file (max. 30 MB)",
                       buttonLabel = "Browse",
                       placeholder = "No file selected"),
             radioButtons("corpus.position", "Where is the information about the corpus source?",
                          c("After token" = "after",
-                           "Before token" = "before")),
+                           "Before token" = "before",
+                           "Not included" = "not.included")),
             radioButtons("context.type", "What is the token's context?",
                          c("Paragraph" = "paragraph",
                            "Sentence" = "one.sentence",
@@ -38,7 +39,7 @@ ui <- fluidPage(
             # Download data
             downloadButton(outputId = "downloadData", 
                            label = "Download",
-                           icon = shiny::icon("download")),
+                           icon = shiny::icon("download"))
         ),
         mainPanel(
             tabsetPanel(tabPanel("Table", DT::dataTableOutput("table.output")),
@@ -56,6 +57,16 @@ server <- function(input, output, session) {
         if (is.null(inFile))
             return(NULL)
         raw.file <- read_file(inFile$datapath, locale(encoding="latin1"))
+
+        # Export options ----------------------------------------------------------
+        context_type <- switch(input$context.type,
+                               paragraph = 1,
+                               one.sentence = 1,
+                               one.word = 0,
+                               one.letter = 0)
+        korpusansicht_present <- switch(input$korpusansicht,
+                                        no.corpus = 0,
+                                        yes.corpus = 1)
         # Metadata ----------------------------------------------------------------
         # Save COSMAS version 
         C2API_Version <- raw.file %>%
@@ -91,9 +102,19 @@ server <- function(input, output, session) {
         
         # All sentences
         all_sentences <- sections[[1]][4]
-        text_parts <- all_sentences %>%
-            str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
-                                dotall = TRUE))
+        
+        if (korpusansicht_present == 1) {
+            all_sentences <- all_sentences %>%
+                str_split(regex("\\nKorpus-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+                unlist()
+            text_parts <- all_sentences[1] %>%
+                str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
+                                    dotall = TRUE))
+        } else {
+            text_parts <- all_sentences %>%
+                str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
+                                    dotall = TRUE))
+        }
         
         # Source information
         data <- data.frame(Sources = text_parts[[1]][,5])
@@ -103,11 +124,15 @@ server <- function(input, output, session) {
             str_trim()
 
         # Context sentence BEFORE token sentence
+        if (context_type == 1) {
         data$Precontext <- text_parts[[1]][,2] %>%
             str_extract_all(boundary("sentence")) %>%
             map(function(x) {nth(x,-2)} ) %>%
             str_trim() %>%
             unlist()
+        } else {
+            data$Precontext <- text_parts[[1]][,2]
+        }
         
         # Sentence part BEFORE token
         data$Prehit <- text_parts[[1]][,2] %>%
@@ -124,20 +149,32 @@ server <- function(input, output, session) {
             unlist()
         
         # Extract context sentence AFTER token sentence
-        data$Postcontext <- text_parts[[1]][,4] %>%
+        if (context_type == 1) {
+            data$Postcontext <- text_parts[[1]][,4] %>%
             str_extract_all(boundary("sentence")) %>%
             map(function(x) {nth(x,2)} ) %>%
             str_trim() %>%
             unlist()
+        } else {
+            data$Postcontext <- text_parts[[1]][,4]
+        }
 
         # Creating data frame for export ------------------------------------------
+        if (context_type == 1) {
         sentence_data <- 
             data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
             select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext, Sources) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
-
+        } else {
+            sentence_data <- 
+                data %>%
+                mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
+                select(C2API_Version, Export_Date, Precontext, Token, Postcontext, Sources) %>%
+                replace_na(list(Precontext = "", Postcontext = ""))
+        }
+        
         return(sentence_data)
     })
     
