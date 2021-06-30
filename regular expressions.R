@@ -7,8 +7,8 @@ library(wordcloud2)
 
 # Reading in the raw COSMAS file
 # FIXME  add encoding options "latin1" and "UTF-8"
-# raw.file <- read_file("test.txt", locale(encoding="latin1"))
-raw.file <- read_file("w_sentence_korpusansicht.TXT", locale(encoding="latin1"))
+raw.file <- read_file("test.txt", locale(encoding="latin1"))
+# raw.file <- read_file("w_sentence_korpusansicht.TXT", locale(encoding="latin1"))
 
 # Metadata ----------------------------------------------------------------
 # Save COSMAS version 
@@ -51,12 +51,14 @@ text_parts <- all_sentences %>%
   str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
                       dotall = TRUE))
 
-# Source information
-data <- data.frame(Sources = text_parts[[1]][,5])
-
 # Tokens
-data$Token <- text_parts[[1]][,3] %>%
-  str_trim()
+data <- data.frame(Token = text_parts[[1]][,3] %>%
+  str_trim())
+
+# Source information
+data$Sources <- text_parts[[1]][,5]
+
+
 unique_tokens <- unique(data$Token)
 print(unique_tokens, row.names=FALSE)
 
@@ -89,11 +91,18 @@ data$Postcontext <- text_parts[[1]][,4] %>%
   unlist()
 
 # Creating data frame for export ------------------------------------------
+
+cols.included <- c("C2API_Version", "Export_Date", "Token", "Precontext", "Sentence", "Postcontext", "Sources")
+
+if (1==1) {
+  cols.included <- append(cols.included, "Sources")
+} else {}
+
 data <- 
   data %>%
   unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
   mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-  select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext) %>%
+  select(cols.included) %>%
   replace_na(list(Precontext = "", Postcontext = ""))
 
 unique_words <- data %>%

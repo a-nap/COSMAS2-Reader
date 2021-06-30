@@ -6,16 +6,20 @@ library(dplyr)
 library(readr)
 library(purrr)
 library(wordcloud2)
+library(shinythemes)
 
 
 # Frontend
 ui <- fluidPage(
+    # Theme
+    theme = shinytheme("sandstone"),
+
 # Application title
     titlePanel("Convert a COSMAS II export file to table"),
 
     sidebarLayout(
         sidebarPanel(
-            h3("Your file must contain the Key Word in Context (KWIC) information."),
+            h4("Your file must contain the Key Word in Context (KWIC) information."),
             # Input raw COSMAS text file
             fileInput(inputId = "raw.file",
                       label = "Upload a plain text file (max. 30 MB)",
@@ -30,15 +34,17 @@ ui <- fluidPage(
                            "Sentence" = "one.sentence",
                            "Word" = "one.word",
                            "Letter" = "one.letter")),
-            radioButtons("korpusansicht", "Is the 'Korpusansicht' (e.g. Quellenansicht, Dokumentansicht, Korpusansicht) included?",
-                         c("No" = "no.corpus",
-                           "Yes" = "yes.corpus")),
-            actionButton("go", "Submit", class = "btn-success", icon = shiny::icon("gears")),
+            # FIXME maybe I don't need this option at all
+            # radioButtons("korpusansicht", "Is the 'Korpusansicht' information (e.g. Quellenansicht, Dokumentansicht, Korpusansicht) included?",
+            #              c("No" = "no.corpus",
+            #                "Yes" = "yes.corpus")),
+            actionButton("go", "Submit", class = "btn btn-info btn-block", icon = shiny::icon("gears")),
             hr(),
             p(strong("Download data as CSV table")),
             # Download data
             downloadButton(outputId = "downloadData", 
                            label = "Download",
+                           class = "btn btn-block",
                            icon = shiny::icon("download"))
         ),
         mainPanel(
@@ -51,6 +57,7 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
     options(shiny.maxRequestSize=100*1024^2) 
+    
     # Process data file and create a table
     mydata <- eventReactive(input$go, {
         inFile <- input$raw.file
@@ -64,9 +71,13 @@ server <- function(input, output, session) {
                                one.sentence = 1,
                                one.word = 0,
                                one.letter = 0)
-        korpusansicht_present <- switch(input$korpusansicht,
-                                        no.corpus = 0,
-                                        yes.corpus = 1)
+        # korpusansicht_present <- switch(input$korpusansicht,
+        #                                 no.corpus = 0,
+        #                                 yes.corpus = 1)
+        corpus_position <- switch(input$corpus.position,
+                                  after = "after",
+                                  before = "before",
+                                  not.included = "not.included")
         # Metadata ----------------------------------------------------------------
         # Save COSMAS version 
         C2API_Version <- raw.file %>%
@@ -103,26 +114,29 @@ server <- function(input, output, session) {
         # All sentences
         all_sentences <- sections[[1]][4]
         
-        if (korpusansicht_present == 1) {
+        # if (korpusansicht_present == 1) {
             all_sentences <- all_sentences %>%
                 str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
                 unlist()
             text_parts <- all_sentences[1] %>%
                 str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
                                     dotall = TRUE))
-        } else {
-            text_parts <- all_sentences %>%
-                str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
-                                    dotall = TRUE))
-        }
-        
-        # Source information
-        data <- data.frame(Sources = text_parts[[1]][,5])
+        # } else {
+        #     text_parts <- all_sentences %>%
+        #         str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
+        #                             dotall = TRUE))
+        # }
         
         # Tokens
-        data$Token <- text_parts[[1]][,3] %>%
-            str_trim()
-
+        data <- data.frame(Token = text_parts[[1]][,3] %>%
+                               str_trim())
+            
+        # Source information
+        if (corpus_position == "after") {
+        data$Sources <- text_parts[[1]][,5]
+        } else if (corpus_position == "not.included") {}
+        else {}
+        
         # Context sentence BEFORE token sentence
         if (context_type == 1) {
         data$Precontext <- text_parts[[1]][,2] %>%
@@ -160,18 +174,41 @@ server <- function(input, output, session) {
         }
 
         # Creating data frame for export ------------------------------------------
+        # Choose which columns to keep based on the input structure
+        cols.included <- c("C2API_Version", "Export_Date")
+        
+        # If the context is a word or letter, omit the sentence
+        if (context_type == 1) {
+            cols.included <- append(cols.included,
+                                   c("Token", 
+                                    "Precontext", 
+                                    "Sentence", 
+                                    "Postcontext"))
+        } else {
+            cols.included <- append(cols.included,
+                                   c("Precontext", 
+                                   "Token", 
+                                   "Postcontext"))
+        }
+        
+        # If there is corpus information, add it
+        if (corpus_position != "not.included") {
+            cols.included <- append(cols.included, "Sources")
+        } else {}
+        
+        # If the context is a paragraph or sentence then make a sentence, else omit it
         if (context_type == 1) {
         sentence_data <- 
             data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-            select(C2API_Version, Export_Date, Token, Precontext, Sentence, Postcontext, Sources) %>%
+            select(cols.included) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
         } else {
             sentence_data <- 
                 data %>%
                 mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-                select(C2API_Version, Export_Date, Precontext, Token, Postcontext, Sources) %>%
+                select(cols.included) %>%
                 replace_na(list(Precontext = "", Postcontext = ""))
         }
         
@@ -192,6 +229,13 @@ server <- function(input, output, session) {
     
     # Make a word cloud plot
     output$word.cloud <- renderWordcloud2({
+        # Export options ----------------------------------------------------------
+        context_type <- switch(input$context.type,
+                               paragraph = 1,
+                               one.sentence = 1,
+                               one.word = 0,
+                               one.letter = 0)
+        if (context_type == 1) {
         # Filter the target sentence
         unique_words <- mydata() %>%
             select(Sentence) %>%
@@ -200,6 +244,14 @@ server <- function(input, output, session) {
             unlist() %>%
             str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
             data.frame()
+        } else {
+            unique_words <- mydata() %>%
+                select(Precontext, Postcontext) %>%
+                unlist() %>%
+                str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
+                data.frame()
+        }
+        
         colnames(unique_words) <- "word"
         # Calculate word frequencies
         unique_words <- unique_words %>%
