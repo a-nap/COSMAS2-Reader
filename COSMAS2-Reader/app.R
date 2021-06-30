@@ -34,10 +34,6 @@ ui <- fluidPage(
                            "Sentence" = "one.sentence",
                            "Word" = "one.word",
                            "Letter" = "one.letter")),
-            # FIXME maybe I don't need this option at all
-            # radioButtons("korpusansicht", "Is the 'Korpusansicht' information (e.g. Quellenansicht, Dokumentansicht, Korpusansicht) included?",
-            #              c("No" = "no.corpus",
-            #                "Yes" = "yes.corpus")),
             actionButton("go", "Submit", class = "btn btn-info btn-block", icon = shiny::icon("gears")),
             hr(),
             p(strong("Download data as CSV table")),
@@ -71,9 +67,6 @@ server <- function(input, output, session) {
                                one.sentence = 1,
                                one.word = 0,
                                one.letter = 0)
-        # korpusansicht_present <- switch(input$korpusansicht,
-        #                                 no.corpus = 0,
-        #                                 yes.corpus = 1)
         corpus_position <- switch(input$corpus.position,
                                   after = "after",
                                   before = "before",
@@ -121,12 +114,7 @@ server <- function(input, output, session) {
             text_parts <- all_sentences[1] %>%
                 str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
                                     dotall = TRUE))
-        # } else {
-        #     text_parts <- all_sentences %>%
-        #         str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
-        #                             dotall = TRUE))
-        # }
-        
+
         # Tokens
         data <- data.frame(Token = text_parts[[1]][,3] %>%
                                str_trim())
