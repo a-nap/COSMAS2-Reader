@@ -1,9 +1,9 @@
 DONE word cloud does not work on letter or word 
 DONE does not work when corpus information is not exported
+DONE make plot of tokens
+DONE output the search phrase somewhere
 
 WAIT Context export: letter does not work. Wait for testing
 
-OPEN make plot of tokens
 OPEN does not work if the file was exported as RTF and converted to TXT later
-OPEN output the search phrase somewhere
 OPEN include ein, einer etc. in the stopwords or create a list

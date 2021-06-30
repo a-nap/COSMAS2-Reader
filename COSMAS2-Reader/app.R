@@ -7,6 +7,7 @@ library(readr)
 library(purrr)
 library(wordcloud2)
 library(shinythemes)
+library(ggplot2)
 
 
 # Frontend
@@ -44,8 +45,15 @@ ui <- fluidPage(
                            icon = shiny::icon("download"))
         ),
         mainPanel(
-            tabsetPanel(tabPanel("Table", DT::dataTableOutput("table.output")),
-                        tabPanel("Tokens", DT::dataTableOutput("unique.tokens")),
+            tabsetPanel(tabPanel("Table", 
+                                 h4("Preview of the generated table"),
+                                 DT::dataTableOutput("table.output")),
+                        tabPanel("Tokens", 
+                                 h4("Search phrase used to generate results"),
+                                 verbatimTextOutput("phrase"),
+                                 h4("Frequencies of unique tokens"),
+                                 DT::dataTableOutput("unique.tokens"), 
+                                 plotOutput("plot.tokens")),
                         tabPanel("Word cloud", wordcloud2Output("word.cloud")))
         )
     )
@@ -53,7 +61,7 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
     options(shiny.maxRequestSize=100*1024^2) 
-    
+    myphrase = reactiveVal()
     # Process data file and create a table
     mydata <- eventReactive(input$go, {
         inFile <- input$raw.file
@@ -90,6 +98,7 @@ server <- function(input, output, session) {
         phrase <- sections[[1]][2] %>%
             str_extract(regex("(?<=\\nSuchanfrage).+(?=\\nSuchoptionen)")) %>%
             str_extract(regex("(?<=:\\s)(.*)$"))
+        myphrase(phrase)
         
         # Sentences and their information -----------------------------------------
         # Abbreviated corpus IDs
@@ -105,46 +114,65 @@ server <- function(input, output, session) {
             str_c(collapse = "|")
         
         # All sentences
-        all_sentences <- sections[[1]][4]
+        all_sentences <- sections[[1]][4] %>%
+            str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+            unlist()
         
-        # if (korpusansicht_present == 1) {
-            all_sentences <- all_sentences %>%
-                str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
-                unlist()
-            text_parts <- all_sentences[1] %>%
-                str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
-                                    dotall = TRUE))
-
+        # Split the file depending on whether the source information is before or after the target sentence, or is absent
+        if (corpus_position == "after") {
+            tp <- paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep="")
+            t <- 3 # token
+            s <- 5 # sentence
+            b <- 2 # before token
+            a <- 4 # after token
+        } else if (corpus_position == "before") {
+            tp <- paste("((?:",corporaID,")/.*?)\\s*\\n+(.*?)<B>(.+?)</>(.*?)\\n", sep="")
+            t <- 4 # token
+            s <- 2 # sentence
+            b <- 3 # before token
+            a <- 5 # after token
+        } else {
+            tp <- paste("(.*?)<B>(.+?)</>(.*?)\\s*\\n", sep="")
+            t <- 3 # token
+            b <- 2 # before token
+            a <- 4 # after token
+        }
+        
+        # Splitting the sentences into text parts
+        text_parts <- 
+            all_sentences[1] %>%
+            str_match_all(regex(tp,
+                          dotall = TRUE))
+        
         # Tokens
-        data <- data.frame(Token = text_parts[[1]][,3] %>%
+        data <- data.frame(Token = text_parts[[1]][,t] %>%
                                str_trim())
             
         # Source information
-        if (corpus_position == "after") {
-        data$Sources <- text_parts[[1]][,5]
-        } else if (corpus_position == "not.included") {}
-        else {}
+        if (corpus_position != "not.included") {
+        data$Sources <- text_parts[[1]][,s]
+        } else {}
         
         # Context sentence BEFORE token sentence
         if (context_type == 1) {
-        data$Precontext <- text_parts[[1]][,2] %>%
+        data$Precontext <- text_parts[[1]][,b] %>%
             str_extract_all(boundary("sentence")) %>%
             map(function(x) {nth(x,-2)} ) %>%
             str_trim() %>%
             unlist()
         } else {
-            data$Precontext <- text_parts[[1]][,2]
+            data$Precontext <- text_parts[[1]][,b]
         }
         
         # Sentence part BEFORE token
-        data$Prehit <- text_parts[[1]][,2] %>%
+        data$Prehit <- text_parts[[1]][,b] %>%
             str_extract_all(boundary("sentence")) %>%
             map(last) %>%
             str_trim() %>%
             unlist()
         
         # Sentence part AFTER token
-        data$Posthit <- text_parts[[1]][,4] %>%
+        data$Posthit <- text_parts[[1]][,a] %>%
             str_extract_all(boundary("sentence")) %>%
             map(first) %>%
             str_trim() %>%
@@ -152,13 +180,13 @@ server <- function(input, output, session) {
         
         # Extract context sentence AFTER token sentence
         if (context_type == 1) {
-            data$Postcontext <- text_parts[[1]][,4] %>%
+            data$Postcontext <- text_parts[[1]][,a] %>%
             str_extract_all(boundary("sentence")) %>%
             map(function(x) {nth(x,2)} ) %>%
             str_trim() %>%
             unlist()
         } else {
-            data$Postcontext <- text_parts[[1]][,4]
+            data$Postcontext <- text_parts[[1]][,a]
         }
 
         # Creating data frame for export ------------------------------------------
@@ -184,7 +212,7 @@ server <- function(input, output, session) {
             cols.included <- append(cols.included, "Sources")
         } else {}
         
-        # If the context is a paragraph or sentence then make a sentence, else omit it
+        # If the context is a paragraph or a sentence then make a target sentence, otherwise omit it
         if (context_type == 1) {
         sentence_data <- 
             data %>%
@@ -208,6 +236,9 @@ server <- function(input, output, session) {
         DT::datatable(mydata(), options = list(orderClasses = TRUE))
     })
     
+    # Output search phrase
+    output$phrase <- renderText({myphrase()})
+    
     # Output table with unique tokens and their frequencies
     output$unique.tokens <- DT::renderDataTable({
         token_count <- mydata() %>%
@@ -215,9 +246,16 @@ server <- function(input, output, session) {
         DT::datatable(token_count)
     })
     
+    # Make a plot of the unique tokens and their frequencies
+    output$plot.tokens <- renderPlot({
+        token_count <- mydata() %>%
+            count(Token, sort=TRUE)
+        ggplot(token_count, aes(x = Token, y = n)) + geom_bar(stat = "identity")
+    })
+
     # Make a word cloud plot
     output$word.cloud <- renderWordcloud2({
-        # Export options ----------------------------------------------------------
+        # Export options 
         context_type <- switch(input$context.type,
                                paragraph = 1,
                                one.sentence = 1,
@@ -257,7 +295,6 @@ server <- function(input, output, session) {
             write.csv(mydata(), file, row.names = FALSE)
         }
     )
-    
 }
 
 # Run the application

@@ -7,8 +7,8 @@ library(wordcloud2)
 
 # Reading in the raw COSMAS file
 # FIXME  add encoding options "latin1" and "UTF-8"
-raw.file <- read_file("test.txt", locale(encoding="latin1"))
-# raw.file <- read_file("w_sentence_korpusansicht.TXT", locale(encoding="latin1"))
+# raw.file <- read_file("test.txt", locale(encoding="latin1"))
+raw.file <- read_file("w_sentence_corpus_before.TXT", locale(encoding="latin1"))
 
 # Metadata ----------------------------------------------------------------
 # Save COSMAS version 
@@ -41,64 +41,116 @@ corporaID <- corpora %>%
   unique() %>%
   str_c(collapse = "|")
 
-all_sentences <- sections[[1]][4]
-all_sentences %>%
-  str_split(regex("\\nKorpus-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
-  unlist()
+all_sentences <- sections[[1]][4] %>%
+                  str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+                  unlist()
 
-  
-text_parts <- all_sentences %>%
-  str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""), 
-                      dotall = TRUE))
+all_sentences <- all_sentences %>%
+  str_split(regex("\\n.+-Ansicht\\,\\s+[:digit:]*\\s+Einträge")) %>%
+  unlist() 
+
+#################################### SOURCES BEFORE
+text_parts <- 
+all_sentences %>%
+    str_match_all(regex(paste("((?:",corporaID,")/.*?)\\s*\\n+(.*?)<B>(.+?)</>(.*?)\\n", sep=""),
+                        dotall = TRUE))
+
+t <- 4 # token
+s <- 2 # sentence
+b <- 3 # before token
+a <- 5 # after token
 
 # Tokens
-data <- data.frame(Token = text_parts[[1]][,3] %>%
-  str_trim())
+data <- data.frame(Token = text_parts[[1]][,4] %>%
+                     str_trim())
 
 # Source information
-data$Sources <- text_parts[[1]][,5]
-
-
-unique_tokens <- unique(data$Token)
-print(unique_tokens, row.names=FALSE)
+data$Sources <- text_parts[[1]][,2]
 
 # Context sentence BEFORE token sentence
-data$Precontext <- text_parts[[1]][,2] %>%
+data$Precontext <- text_parts[[1]][,3] %>%
   str_extract_all(boundary("sentence")) %>%
   map(function(x) {nth(x,-2)} ) %>%
   str_trim() %>%
   unlist()
 
 # Sentence part BEFORE token
-data$Prehit <- text_parts[[1]][,2] %>%
+data$Prehit <- text_parts[[1]][,3] %>%
   str_extract_all(boundary("sentence")) %>%
   map(last) %>%
   str_trim() %>%
   unlist()
 
 # Sentence part AFTER token
-data$Posthit <- text_parts[[1]][,4] %>%
+data$Posthit <- text_parts[[1]][,5] %>%
   str_extract_all(boundary("sentence")) %>%
   map(first) %>%
   str_trim() %>%
   unlist()
 
 # Extract context sentence AFTER token sentence
-data$Postcontext <- text_parts[[1]][,4] %>%
+data$Postcontext <- text_parts[[1]][,5] %>%
   str_extract_all(boundary("sentence")) %>%
   map(function(x) {nth(x,2)} ) %>%
   str_trim() %>%
   unlist()
 
+##################################### SOURCES AFTER
+# text_parts <- all_sentences %>%
+  # str_match_all(regex(paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep=""),
+#                       dotall = TRUE))
+
+# # Tokens
+# data <- data.frame(Token = text_parts[[1]][,3] %>%
+#   str_trim())
+# 
+# # Source information
+# data$Sources <- text_parts[[1]][,5]
+# 
+# 
+# unique_tokens <- unique(data$Token)
+# print(unique_tokens, row.names=FALSE)
+# 
+# # Context sentence BEFORE token sentence
+# data$Precontext <- text_parts[[1]][,2] %>%
+#   str_extract_all(boundary("sentence")) %>%
+#   map(function(x) {nth(x,-2)} ) %>%
+#   str_trim() %>%
+#   unlist()
+# 
+# # Sentence part BEFORE token
+# data$Prehit <- text_parts[[1]][,2] %>%
+#   str_extract_all(boundary("sentence")) %>%
+#   map(last) %>%
+#   str_trim() %>%
+#   unlist()
+# 
+# # Sentence part AFTER token
+# data$Posthit <- text_parts[[1]][,4] %>%
+#   str_extract_all(boundary("sentence")) %>%
+#   map(first) %>%
+#   str_trim() %>%
+#   unlist()
+# 
+# # Extract context sentence AFTER token sentence
+# data$Postcontext <- text_parts[[1]][,4] %>%
+#   str_extract_all(boundary("sentence")) %>%
+#   map(function(x) {nth(x,2)} ) %>%
+#   str_trim() %>%
+#   unlist()
+# 
 # Creating data frame for export ------------------------------------------
 
-cols.included <- c("C2API_Version", "Export_Date", "Token", "Precontext", "Sentence", "Postcontext", "Sources")
+# cols.included <- c("C2API_Version", "Export_Date", "Token", "Precontext", "Sentence", "Postcontext", "Sources")
+cols.included <- c("C2API_Version", "Export_Date", "Token", "Precontext", "Sentence", "Postcontext")
 
-if (1==1) {
+s <- "not.included"
+
+if (s != "not.included") {
   cols.included <- append(cols.included, "Sources")
 } else {}
 
-data <- 
+data <-
   data %>%
   unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
   mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
