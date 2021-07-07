@@ -20,7 +20,7 @@ ui <- fluidPage(
 
     sidebarLayout(
         sidebarPanel(
-            h4("Your file must contain the Key Word in Context (KWIC) information."),
+            h4("Your file must contain the Key Word in Context (KWIC) information and be exported to a plain text file."),
             # Input raw COSMAS text file
             fileInput(inputId = "raw.file",
                       label = "Upload a plain text file (max. 30 MB)",
@@ -150,7 +150,7 @@ server <- function(input, output, session) {
             
         # Source information
         if (corpus_position != "not.included") {
-        data$Sources <- text_parts[[1]][,s]
+        data$Source <- text_parts[[1]][,s]
         } else {}
         
         # Context sentence BEFORE token sentence
@@ -209,7 +209,7 @@ server <- function(input, output, session) {
         
         # If there is corpus information, add it
         if (corpus_position != "not.included") {
-            cols.included <- append(cols.included, "Sources")
+            cols.included <- append(cols.included, "Source")
         } else {}
         
         # If the context is a paragraph or a sentence then make a target sentence, otherwise omit it
@@ -268,13 +268,13 @@ server <- function(input, output, session) {
             str_to_sentence("de") %>%
             str_extract_all(boundary("word")) %>%
             unlist() %>%
-            str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
+            str_subset(regex("[^und, der, die, das, Der, Die, Das][:alpha:]")) %>%
             data.frame()
         } else {
             unique_words <- mydata() %>%
                 select(Precontext, Postcontext) %>%
                 unlist() %>%
-                str_subset(regex("[^und, der, die, das, Der, Die, Das, mond][:alpha:]")) %>%
+                str_subset(regex("[^und, der, die, das, Der, Die, Das][:alpha:]")) %>%
                 data.frame()
         }
         
