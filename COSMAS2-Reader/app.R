@@ -214,18 +214,18 @@ server <- function(input, output, session) {
         
         # If the context is a paragraph or a sentence then make a target sentence, otherwise omit it
         if (context_type == 1) {
-        sentence_data <- 
+          sentence_data <- 
             data %>%
             unite(Prehit, Token, Posthit, col="Sentence", sep = " ", remove=F) %>%
             mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-            select(cols.included) %>%
+            select(all_of(cols.included)) %>%
             replace_na(list(Precontext = "", Postcontext = ""))
         } else {
-            sentence_data <- 
-                data %>%
-                mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
-                select(cols.included) %>%
-                replace_na(list(Precontext = "", Postcontext = ""))
+          sentence_data <- 
+            data %>%
+            mutate(C2API_Version = C2API_Version, Export_Date = Export_Date) %>%
+            select(all_of(cols.included)) %>%
+            replace_na(list(Precontext = "", Postcontext = ""))
         }
         
         return(sentence_data)
