@@ -120,19 +120,19 @@ server <- function(input, output, session) {
         
         # Split the file depending on whether the source information is before or after the target sentence, or is absent
         if (corpus_position == "after") {
-            tp <- paste("(.*?)<B>(.+?)</>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep="")
+            tp <- paste("(.*?)<B>(.+?)</B?>(.*?)\\(((?:",corporaID,")/.*?)\\)\\s*\\n", sep="")
             t <- 3 # token
             s <- 5 # sentence
             b <- 2 # before token
             a <- 4 # after token
         } else if (corpus_position == "before") {
-            tp <- paste("((?:",corporaID,")/.*?)\\s*\\n+(.*?)<B>(.+?)</>(.*?)\\n", sep="")
+            tp <- paste("((?:",corporaID,")/.*?)\\s*\\n+(.*?)<B>(.+?)</B?>(.*?)\\n", sep="")
             t <- 4 # token
             s <- 2 # sentence
             b <- 3 # before token
             a <- 5 # after token
         } else {
-            tp <- paste("(.*?)<B>(.+?)</>(.*?)\\s*\\n", sep="")
+            tp <- paste("(.*?)<B>(.+?)</B?>(.*?)\\s*\\n", sep="")
             t <- 3 # token
             b <- 2 # before token
             a <- 4 # after token
