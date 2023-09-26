@@ -20,6 +20,15 @@ The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-b
 
 ## Usage
 
+**tl;dr:** for the app to work and not crash:
+
+- The file must have been exported as TXT
+- The file must have KWIC information
+- You must know where the source reference (*Quellennachweis*) is in the file (before, after, absent)
+- You must know what the context (*Volltext*) is (letter, word, sentence, phrase)
+
+* * * * *
+
 To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (*Dateiformat*) should be **TEXT**. If the uploaded file was saved as a different format and converted to plain text, this program will likely crash.
 
 Crucially, the file must contain the  **Key Word in Context (KWIC)** information. Before exporting the search results in COSMAS, make sure that the *KWIC* checkbox is selected. The length of the context before and after the KWIC can be arbitrary (2 sentences left and right in the image below).

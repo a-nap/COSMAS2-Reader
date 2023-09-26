@@ -69,6 +69,14 @@
 <p>You can also access it remotely: <a href="https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/">anna-pryslopska.shinyapps.io/COSMAS2-Reader</a></p>
 <p>The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-based user interface of COSMAS II.</p>
 <h2 id="usage">Usage</h2>
+<p><strong>tl;dr:</strong> for the app to work and not crash:</p>
+<ul>
+<li>The file must have been exported as TXT</li>
+<li>The file must have KWIC information</li>
+<li>You must know where the source reference (<em>Quellennachweis</em>) is in the file (before, after, absent)</li>
+<li>You must know what the context (<em>Volltext</em>) is (letter, word, sentence, phrase)</li>
+</ul>
+<hr>
 <p>To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (<em>Dateiformat</em>) should be <strong>TEXT</strong>. If the uploaded file was saved as a different format and converted to plain text, this program will likely crash.</p>
 <p>Crucially, the file must contain the  <strong>Key Word in Context (KWIC)</strong> information. Before exporting the search results in COSMAS, make sure that the <em>KWIC</em> checkbox is selected. The length of the context before and after the KWIC can be arbitrary (2 sentences left and right in the image below).</p>
 <p>Another important information is <strong>Volltext</strong>, i.e. whether the token is exported with the context of letters (<em>Buchstaben</em>), words (<em>Wörter</em>), sentences (<em>Sätze</em>), or paragraphs (<em>Absätze</em>). This is set to 5 letters before and after in the image below.</p>
