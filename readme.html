@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>COSMAS2-Reader</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension bierner.markdown-checkbox */
+.contains-task-list {
+    padding-left: 0;
+}
+
+.contains-task-list li {
+    margin-left: 24px;
+}
+
+.contains-task-list .task-list-item {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.contains-task-list .contains-task-list {
+    padding-left: 20px;
+} 
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="cosmas2-reader">COSMAS2-Reader</h1>
+<h2 id="description">Description</h2>
+<p>COSMAS2-Reader is an R Shiny application for formatting a COSMAS II exported text file. <a href="http://www.ids-mannheim.de/cosmas2/,">COSMAS  II</a> i.e. the <em>Corpus Search, Management and Analysis System</em> is delevoped and maintained by the Leibniz-Institut für Deutsche Sprache at Mannheim.</p>
+<p>This project was developed to simplify the process for both scientists and students who want to utilize the IDS corpora.</p>
+<p>The format of text files exported from the online COSMAS II interface can be challenging to convert into a table format. Transforming the data into a tabular structure that includes tokens and their contexts is valuable for annotation purposes, especially when you need to perform quick and limited-scale annotations, such as in student research projects or when validating intuitions related to a specific  phenomenon.</p>
+<p>This application is designed to simplify the process of using the corpora, saving users time, and breaking down potential barriers. It requires no programming skills and removes the need for a lot of manual copying and pasting. To my knowledge, this is the only project that offers this capability.</p>
+<h2 id="installation">Installation</h2>
+<p>To run this application locally, you need to install <a href="https://cran.r-project.org/">R</a> and the packages: dplyr, ggplot2, purrr, readr, shiny, shinythemes, stringr, tidyr, wordcloud2.</p>
+<p>You can also access it remotely: <a href="https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/">anna-pryslopska.shinyapps.io/COSMAS2-Reader</a></p>
+<p>The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-based user interface of COSMAS II.</p>
+<h2 id="usage">Usage</h2>
+<p>To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (<em>Dateiformat</em>) should be <strong>TEXT</strong>.</p>
+<p>Crucially, the file must contain the  <strong>Key Word in Context (KWIC)</strong> information. Before exporting the search results in COSMAS, make sure that the <em>KWIC</em> checkbox is selected. The length of the context before and after the KWIC can be arbitrary (2 sentences left and right in the image below).</p>
+<p>Another important information is <strong>Volltext</strong>, i.e. whether the token is exported with the context of letters (<em>Buchstaben</em>), words (<em>Wörter</em>), sentences (<em>Sätze</em>), or paragraphs (<em>Absätze</em>). This is set to 5 letters before and after in the image below.</p>
+<p>Lastly, the position of the <strong>source reference</strong> (<em>Quellennachweis</em>) should be noted: present or not (<em>exportieren</em> vs unchecked) and before or after (unchecked or <em>nachher</em>).</p>
+<p><img src="file:////home/anna/Seafile/Documents/Work/Uni Tuebingen/A1/Corpus/COSMAS2-Reader/cosmas.png" alt="COSMAS II export interface"></p>
+<p>To use the COSMAS II reader, browse and select the exported corpus text file (<code>data.TXT</code> in the image above). The file size should not exceed 30MB. Then choose where the <strong>source reference</strong> information is located (absent, before, or after) and what the token context (<strong>Volltext</strong>) is: letters, words, sentences, or paragraphs. Click <em>Submit</em> to process the file.</p>
+<p>You should see a preview of the formatted table, an overview of the tokens, and a wordcloud of the accompaning context. You can download the table in the preview as a csv file by clicking on <em>Download</em>.</p>
+<p>If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the fil</p>
+<h2 id="credits">Credits</h2>
+<p>COSMAS2-Reader was created by Anna Pryslopska as part of her doctoral thesis.</p>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,11 @@
+name: COSMAS2-Reader
+title: COSMAS2-Reader
+username:
+account: anna-pryslopska
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4337332
+bundleId: 7731001
+url: https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/
+asMultiple: FALSE
+asStatic: FALSE
