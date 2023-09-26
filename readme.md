@@ -27,6 +27,8 @@ The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-b
 - You must know where the source reference (*Quellennachweis*) is in the file (before, after, absent)
 - You must know what the context (*Volltext*) is (letter, word, sentence, phrase)
 
+You set all these parameters during export in COSMAS II and you can find it in the file itself (look for `KWIC`, `Belege`, and `Angezeigter Kontext`).
+
 * * * * *
 
 To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (*Dateiformat*) should be **TEXT**. If the uploaded file was saved as a different format and converted to plain text, this program will likely crash.
