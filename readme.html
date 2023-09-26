@@ -69,11 +69,11 @@
 <p>You can also access it remotely: <a href="https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/">anna-pryslopska.shinyapps.io/COSMAS2-Reader</a></p>
 <p>The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-based user interface of COSMAS II.</p>
 <h2 id="usage">Usage</h2>
-<p>To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (<em>Dateiformat</em>) should be <strong>TEXT</strong>.</p>
+<p>To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (<em>Dateiformat</em>) should be <strong>TEXT</strong>. If the uploaded file was saved as a different format and converted to plain text, this program will likely crash.</p>
 <p>Crucially, the file must contain the  <strong>Key Word in Context (KWIC)</strong> information. Before exporting the search results in COSMAS, make sure that the <em>KWIC</em> checkbox is selected. The length of the context before and after the KWIC can be arbitrary (2 sentences left and right in the image below).</p>
 <p>Another important information is <strong>Volltext</strong>, i.e. whether the token is exported with the context of letters (<em>Buchstaben</em>), words (<em>Wörter</em>), sentences (<em>Sätze</em>), or paragraphs (<em>Absätze</em>). This is set to 5 letters before and after in the image below.</p>
 <p>Lastly, the position of the <strong>source reference</strong> (<em>Quellennachweis</em>) should be noted: present or not (<em>exportieren</em> vs unchecked) and before or after (unchecked or <em>nachher</em>).</p>
-<p><img src="file:////home/anna/Seafile/Documents/Work/Uni Tuebingen/A1/Corpus/COSMAS2-Reader/cosmas.png" alt="COSMAS II export interface"></p>
+<p><img src="file:////home/anna/Seafile/Documents/Work/Uni Tuebingen/A1/Corpus/cosmas.png" alt="COSMAS II export interface"></p>
 <p>To use the COSMAS II reader, browse and select the exported corpus text file (<code>data.TXT</code> in the image above). The file size should not exceed 30MB. Then choose where the <strong>source reference</strong> information is located (absent, before, or after) and what the token context (<strong>Volltext</strong>) is: letters, words, sentences, or paragraphs. Click <em>Submit</em> to process the file.</p>
 <p>You should see a preview of the formatted table, an overview of the tokens, and a wordcloud of the accompaning context. You can download the table in the preview as a csv file by clicking on <em>Download</em>.</p>
 <p>If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the fil</p>
