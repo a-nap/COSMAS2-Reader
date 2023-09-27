@@ -1,5 +1,11 @@
 # COSMAS2-Reader
 
+1. [COSMAS2-Reader](#cosmas2-reader)
+   1. [Description](#description)
+   2. [Installation](#installation)
+   3. [Usage](#usage)
+   4. [Credits and Copyright](#credits-and-copyright)
+
 ## Description
 
 COSMAS2-Reader is an R Shiny application for formatting a COSMAS II exported text file. [COSMAS  II](http://www.ids-mannheim.de/cosmas2/,) i.e. the *Corpus Search, Management and Analysis System* is delevoped and maintained by the Leibniz-Institut für Deutsche Sprache at Mannheim.
@@ -12,7 +18,7 @@ This application is designed to simplify the process of using the corpora, savin
 
 ## Installation
 
-To run this application locally, you need to install [R](https://cran.r-project.org/) and the packages: dplyr, ggplot2, purrr, readr, shiny, shinythemes, stringr, tidyr, wordcloud2.
+To run this application locally, you need to install [R](https://cran.r-project.org/) and the packages: `dplyr`, `ggplot2`, `purrr`, `readr`, `shiny`, `shinythemes`, `stringr`, `tidyr`, `wordcloud2`.
 
 You can also access it remotely: [anna-pryslopska.shinyapps.io/COSMAS2-Reader](https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/)
 
@@ -28,6 +34,8 @@ The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-b
 - You must know what the context (*Volltext*) is (letter, word, sentence, phrase)
 
 You set all these parameters during export in COSMAS II and you can find it in the file itself (look for `KWIC`, `Belege`, and `Angezeigter Kontext`).
+
+![COSMAS 2 Reader interface](reader.png)
 
 * * * * *
 
@@ -47,6 +55,14 @@ You should see a preview of the formatted table, an overview of the tokens, and 
 
 If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the fil
 
-## Credits
+## Credits and Copyright
 
-COSMAS2-Reader was created by Anna Pryslopska as part of her doctoral thesis.
+Copyright (c) 2021 Anna Prysłopska pryslopska.com
+
+COSMAS2-Reader was created as part of my doctoral thesis.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, distribute, and sublicense copies of the Software, and to permit persons to whom the Software is furnished to do so.
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

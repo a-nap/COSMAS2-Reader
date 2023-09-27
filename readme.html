@@ -59,13 +59,23 @@
     </head>
     <body class="vscode-body vscode-dark">
         <h1 id="cosmas2-reader">COSMAS2-Reader</h1>
+<ol>
+<li><a href="#cosmas2-reader">COSMAS2-Reader</a>
+<ol>
+<li><a href="#description">Description</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#credits-and-copyright">Credits and Copyright</a></li>
+</ol>
+</li>
+</ol>
 <h2 id="description">Description</h2>
 <p>COSMAS2-Reader is an R Shiny application for formatting a COSMAS II exported text file. <a href="http://www.ids-mannheim.de/cosmas2/,">COSMAS  II</a> i.e. the <em>Corpus Search, Management and Analysis System</em> is delevoped and maintained by the Leibniz-Institut für Deutsche Sprache at Mannheim.</p>
 <p>This project was developed to simplify the process for both scientists and students who want to utilize the IDS corpora.</p>
 <p>The format of text files exported from the online COSMAS II interface can be challenging to convert into a table format. Transforming the data into a tabular structure that includes tokens and their contexts is valuable for annotation purposes, especially when you need to perform quick and limited-scale annotations, such as in student research projects or when validating intuitions related to a specific  phenomenon.</p>
 <p>This application is designed to simplify the process of using the corpora, saving users time, and breaking down potential barriers. It requires no programming skills and removes the need for a lot of manual copying and pasting. To my knowledge, this is the only project that offers this capability.</p>
 <h2 id="installation">Installation</h2>
-<p>To run this application locally, you need to install <a href="https://cran.r-project.org/">R</a> and the packages: dplyr, ggplot2, purrr, readr, shiny, shinythemes, stringr, tidyr, wordcloud2.</p>
+<p>To run this application locally, you need to install <a href="https://cran.r-project.org/">R</a> and the packages: <code>dplyr</code>, <code>ggplot2</code>, <code>purrr</code>, <code>readr</code>, <code>shiny</code>, <code>shinythemes</code>, <code>stringr</code>, <code>tidyr</code>, <code>wordcloud2</code>.</p>
 <p>You can also access it remotely: <a href="https://anna-pryslopska.shinyapps.io/COSMAS2-Reader/">anna-pryslopska.shinyapps.io/COSMAS2-Reader</a></p>
 <p>The current COSMAS2-Reader version is compatible with version 2.4.2 of the web-based user interface of COSMAS II.</p>
 <h2 id="usage">Usage</h2>
@@ -77,6 +87,7 @@
 <li>You must know what the context (<em>Volltext</em>) is (letter, word, sentence, phrase)</li>
 </ul>
 <p>You set all these parameters during export in COSMAS II and you can find it in the file itself (look for <code>KWIC</code>, <code>Belege</code>, and <code>Angezeigter Kontext</code>).</p>
+<p><img src="file:////home/anna/Seafile/Documents/Work/Uni Tuebingen/A1/Corpus/reader.png" alt="COSMAS 2 Reader interface"></p>
 <hr>
 <p>To use the reader, upload a plain text file as exported by the COSMAS interface. The data format (<em>Dateiformat</em>) should be <strong>TEXT</strong>. If the uploaded file was saved as a different format and converted to plain text, this program will likely crash.</p>
 <p>Crucially, the file must contain the  <strong>Key Word in Context (KWIC)</strong> information. Before exporting the search results in COSMAS, make sure that the <em>KWIC</em> checkbox is selected. The length of the context before and after the KWIC can be arbitrary (2 sentences left and right in the image below).</p>
@@ -86,8 +97,12 @@
 <p>To use the COSMAS II reader, browse and select the exported corpus text file (<code>data.TXT</code> in the image above). The file size should not exceed 30MB. Then choose where the <strong>source reference</strong> information is located (absent, before, or after) and what the token context (<strong>Volltext</strong>) is: letters, words, sentences, or paragraphs. Click <em>Submit</em> to process the file.</p>
 <p>You should see a preview of the formatted table, an overview of the tokens, and a wordcloud of the accompaning context. You can download the table in the preview as a csv file by clicking on <em>Download</em>.</p>
 <p>If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the fil</p>
-<h2 id="credits">Credits</h2>
-<p>COSMAS2-Reader was created by Anna Pryslopska as part of her doctoral thesis.</p>
+<h2 id="credits-and-copyright">Credits and Copyright</h2>
+<p>Copyright (c) 2021 Anna Prysłopska <a href="http://pryslopska.com">pryslopska.com</a></p>
+<p>COSMAS2-Reader was created as part of my doctoral thesis.</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to use, copy, modify, merge, publish, distribute, and sublicense copies of the Software, and to permit persons to whom the Software is furnished to do so.</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
         
         
