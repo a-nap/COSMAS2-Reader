@@ -8,13 +8,26 @@ library(purrr)
 library(wordcloud2)
 library(shinythemes)
 library(ggplot2)
+library(wesanderson)
 
+# FIXME after-sentence-paragraph.txt pre/post/etc context wrong
+# FIXME after-sentence-sentence.txt pre/post/etc context wrong
 
-# Frontend
+palettes <- c("BottleRocket1","BottleRocket2","Rushmore",
+             "Royal1","Royal2","Zissou1",
+             "Darjeeling1","Darjeeling2","Chevalier1",
+             "FantasticFox1","Moonrise1","Moonrise2",
+             "Moonrise3","Cavalcanti1","GrandBudapest1",
+             "GrandBudapest2","IsleofDogs1","IsleofDogs2")
+shapes <- c("circle","cardioid","diamond","triangle-forward",
+            "triangle","pentagon","star")
+
+# FRONTEND ----------------------------------------------------------------
+
 ui <- fluidPage(
-    # Theme
-    theme = shinytheme("sandstone"),
-
+  # Theme
+  theme = shinytheme("sandstone"),
+  
 # Application title
     titlePanel("Convert a COSMAS II export file to table"),
 
@@ -30,11 +43,6 @@ ui <- fluidPage(
                          c("After token" = "after",
                            "Before token" = "before",
                            "Not included" = "not.included")),
-            radioButtons("context.type", "What is the token's context (Volltext)?",
-                         c("Paragraph" = "paragraph",
-                           "Sentence" = "one.sentence",
-                           "Word" = "one.word",
-                           "Letter" = "one.letter")),
             actionButton("go", "Submit", class = "btn btn-info btn-block", icon = shiny::icon("gears")),
             hr(),
             p(strong("Download data as CSV table")),
@@ -51,17 +59,33 @@ ui <- fluidPage(
                         tabPanel("Tokens", 
                                  h4("Search phrase used to generate results"),
                                  verbatimTextOutput("phrase"),
+                                 h4("Token context"),
+                                 verbatimTextOutput("allcontext"), 
                                  h4("Frequencies of unique tokens"),
                                  DT::dataTableOutput("unique.tokens"), 
                                  plotOutput("plot.tokens")),
-                        tabPanel("Word cloud", wordcloud2Output("word.cloud")))
+                        tabPanel("Word cloud", wordcloud2Output("word.cloud"),
+                                 selectInput("palette.type", "Choose a color palette:",
+                                             choices = palettes),
+                                 selectInput("shape.type", "Choose a shape palette:",
+                                             choices = shapes),
+                                 textAreaInput("stopwords", "Words to exclude (comma separated, capitalization matters):", 
+                                               value="",
+                                               placeholder="e.g. der, die, das, Der, Die, Das", rows = 3),
+                                 # actionButton("update", "Update", class = "btn btn-info btn-block", icon = shiny::icon("rotate")),
+                                 ))
         )
     )
 )
 
+
+# SERVER ------------------------------------------------------------------
+
 server <- function(input, output, session) {
     options(shiny.maxRequestSize=100*1024^2) 
     myphrase = reactiveVal()
+    mycontext = reactiveVal()
+    mytokencontext = reactiveVal()
     # Process data file and create a table
     mydata <- eventReactive(input$go, {
         inFile <- input$raw.file
@@ -70,11 +94,11 @@ server <- function(input, output, session) {
         raw.file <- read_file(inFile$datapath, locale(encoding="latin1"))
 
         # Export options ----------------------------------------------------------
-        context_type <- switch(input$context.type,
-                               paragraph = 1,
-                               one.sentence = 1,
-                               one.word = 0,
-                               one.letter = 0)
+        # context_type <- switch(input$context.type,
+        #                        paragraph = 1,
+        #                        one.sentence = 1,
+        #                        one.word = 0,
+        #                        one.letter = 0)
         corpus_position <- switch(input$corpus.position,
                                   after = "after",
                                   before = "before",
@@ -112,6 +136,31 @@ server <- function(input, output, session) {
             str_subset(regex(".*")) %>%
             unique() %>%
             str_c(collapse = "|")
+        
+        # Check exported token context
+        allcontext <-  corpora %>%
+          str_split("\\n") %>%
+          unlist() %>%
+          tail(8) %>%
+          str_extract(regex("(?<=Angezeigter Kontext).*")) %>%
+          str_extract(regex("(?<=\\:\\s).*")) %>%
+          str_subset(regex(".*")) 
+        
+        mytokencontext(allcontext)
+        
+        allcontext <- 
+          allcontext %>%
+          str_extract_all(boundary("word"))
+        context_t <- allcontext[[1]][2]
+
+        if (context_t == "Absatz" | context_t == "Absätze" | context_t == "Satz" | context_t == "Sätze") {
+          context_type <- 1
+        } else if (context_t == "Wort" | context_t == "Wörter" | context_t == "Buchstabe" | context_t == "Buchstaben") {
+          context_type <- 0
+        } else {
+          print('Unknown token context')
+        }
+        mycontext(context_type)
         
         # All sentences
         all_sentences <- sections[[1]][4] %>%
@@ -178,6 +227,7 @@ server <- function(input, output, session) {
             str_trim() %>%
             unlist()
         
+
         # Extract context sentence AFTER token sentence
         if (context_type == 1) {
             data$Postcontext <- text_parts[[1]][,a] %>%
@@ -238,6 +288,7 @@ server <- function(input, output, session) {
     
     # Output search phrase
     output$phrase <- renderText({myphrase()})
+    output$allcontext <- renderText({mytokencontext()})
     
     # Output table with unique tokens and their frequencies
     output$unique.tokens <- DT::renderDataTable({
@@ -250,17 +301,24 @@ server <- function(input, output, session) {
     output$plot.tokens <- renderPlot({
         token_count <- mydata() %>%
             count(Token, sort=TRUE)
-        ggplot(token_count, aes(x = Token, y = n)) + geom_bar(stat = "identity")
+        ggplot(token_count, aes(x = Token, y = n)) + 
+          geom_bar(stat = "identity") +
+          theme_minimal()
     })
 
-    # Make a word cloud plot
+
+    # Make a word cloud plot -----------------------------------------------
     output$word.cloud <- renderWordcloud2({
-        # Export options 
-        context_type <- switch(input$context.type,
-                               paragraph = 1,
-                               one.sentence = 1,
-                               one.word = 0,
-                               one.letter = 0)
+      context_type <- mycontext()
+      # FIXME stopwords with - break the wordcloud
+      
+        stopwords <- input$stopwords
+        if (stopwords == "") {
+          stopwords <- paste("[:alpha:]")
+        } else {
+          stopwords <- paste("[^", stopwords,"][:alpha:]", sep="")
+        }
+
         if (context_type == 1) {
         # Filter the target sentence
         unique_words <- mydata() %>%
@@ -268,24 +326,29 @@ server <- function(input, output, session) {
             str_to_sentence("de") %>%
             str_extract_all(boundary("word")) %>%
             unlist() %>%
-            str_subset(regex("[^und, der, die, das, Der, Die, Das][:alpha:]")) %>%
+            str_subset(regex(stopwords)) %>%
             data.frame()
         } else {
             unique_words <- mydata() %>%
                 select(Precontext, Postcontext) %>%
                 unlist() %>%
-                str_subset(regex("[^und, der, die, das, Der, Die, Das][:alpha:]")) %>%
+                str_subset(regex(stopwords)) %>%
                 data.frame()
         }
-        
+
         colnames(unique_words) <- "word"
         # Calculate word frequencies
         unique_words <- unique_words %>%
             count(word, sort=TRUE)
         # Make word cloud
-        wordcloud2(data=unique_words, size=1.6, color='random-dark', shape = "circle")
+        palette_opt = input$palette.type
+        shape_opt = input$shape.type
+        wordcloud2(data=unique_words, size=0.5,
+                   color=rep_len(c(wes_palette(palette_opt, 10, type = c("continuous"))), nrow(demoFreq)),
+                   shape = shape_opt)
+
     })
-    
+
     # Download table
     output$downloadData <- downloadHandler(
         filename = function() {
@@ -297,5 +360,8 @@ server <- function(input, output, session) {
     )
 }
 
-# Run the application
+
+# Run the application -----------------------------------------------------
+
+
 shinyApp(ui = ui, server = server)
