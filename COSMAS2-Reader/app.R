@@ -35,6 +35,11 @@ ui <- fluidPage(
             h4("Your file must contain the Key Word in Context (KWIC) information and be exported to a plain text file."),
             # Input raw COSMAS text file
             fileInput(inputId = "raw.file",
+                      accept = c(
+                        "text",
+                        "text/plain",
+                        ".txt",
+                        ".TXT"),
                       label = "Upload a plain text file (max. 30 MB)",
                       buttonLabel = "Browse",
                       placeholder = "No file selected"),
@@ -72,7 +77,6 @@ ui <- fluidPage(
                                  textAreaInput("stopwords", "Words to exclude (comma separated, capitalization matters):", 
                                                value="",
                                                placeholder="e.g. der, die, das, Der, Die, Das", rows = 3),
-                                 # actionButton("update", "Update", class = "btn btn-info btn-block", icon = shiny::icon("rotate")),
                                  ))
         )
     )
@@ -91,6 +95,7 @@ server <- function(input, output, session) {
         inFile <- input$raw.file
         if (is.null(inFile))
             return(NULL)
+
         raw.file <- read_file(inFile$datapath, locale(encoding="latin1"))
 
         # Export options ----------------------------------------------------------
@@ -187,7 +192,6 @@ server <- function(input, output, session) {
           str_match_all(regex(tp,
                               dotall = TRUE))
         validate(need(!is.na(check_df[[1]][2]), message="Can't find the corpus source information. Try checking the 'Quellennachweis' position and select the appropriate option."))
-        
         
         # Splitting the sentences into text parts
         text_parts <- 
