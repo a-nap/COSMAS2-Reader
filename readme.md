@@ -53,7 +53,7 @@ To use the COSMAS II reader, browse and select the exported corpus text file (`d
 
 You should see a preview of the formatted table, an overview of the tokens, and a wordcloud of the accompaning context. You can download the table in the preview as a csv file by clicking on *Download*.
 
-If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the fil
+If any of these information are wrong, then the application might crash or freeze. In this case, restart it. If you forgot which export settings you chose, you can look them up in the file itself (look for `KWIC`, `Belege`, and `Angezeigter Kontext`).
 
 ## Credits and Copyright
 
