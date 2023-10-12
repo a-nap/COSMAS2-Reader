@@ -10,8 +10,7 @@ library(shinythemes)
 library(ggplot2)
 library(wesanderson)
 
-# FIXME after-sentence-paragraph.txt pre/post/etc context wrong
-# FIXME after-sentence-sentence.txt pre/post/etc context wrong
+# FIXME sentence and paragraph contexts aren't processed correctly!
 
 palettes <- c("BottleRocket1","BottleRocket2","Rushmore",
              "Royal1","Royal2","Zissou1",
@@ -43,6 +42,7 @@ ui <- fluidPage(
                          c("After token" = "after",
                            "Before token" = "before",
                            "Not included" = "not.included")),
+            p("Make sure that you chose the correct source position, as the app may crash if this information is incorrect."),
             actionButton("go", "Submit", class = "btn btn-info btn-block", icon = shiny::icon("gears")),
             hr(),
             p(strong("Download data as CSV table")),
@@ -59,8 +59,8 @@ ui <- fluidPage(
                         tabPanel("Tokens", 
                                  h4("Search phrase used to generate results"),
                                  verbatimTextOutput("phrase"),
-                                 h4("Token context"),
-                                 verbatimTextOutput("allcontext"), 
+                                 h4("Token context:"),
+                                 verbatimTextOutput("context_phrase"), 
                                  h4("Frequencies of unique tokens"),
                                  DT::dataTableOutput("unique.tokens"), 
                                  plotOutput("plot.tokens")),
@@ -94,11 +94,6 @@ server <- function(input, output, session) {
         raw.file <- read_file(inFile$datapath, locale(encoding="latin1"))
 
         # Export options ----------------------------------------------------------
-        # context_type <- switch(input$context.type,
-        #                        paragraph = 1,
-        #                        one.sentence = 1,
-        #                        one.word = 0,
-        #                        one.letter = 0)
         corpus_position <- switch(input$corpus.position,
                                   after = "after",
                                   before = "before",
@@ -138,7 +133,7 @@ server <- function(input, output, session) {
             str_c(collapse = "|")
         
         # Check exported token context
-        allcontext <-  corpora %>%
+        context_phrase <-  corpora %>%
           str_split("\\n") %>%
           unlist() %>%
           tail(8) %>%
@@ -146,19 +141,19 @@ server <- function(input, output, session) {
           str_extract(regex("(?<=\\:\\s).*")) %>%
           str_subset(regex(".*")) 
         
-        mytokencontext(allcontext)
+        mytokencontext(context_phrase)
         
-        allcontext <- 
-          allcontext %>%
+        context_phrase <- 
+          context_phrase %>%
           str_extract_all(boundary("word"))
-        context_t <- allcontext[[1]][2]
+        context_str <- context_phrase[[1]][2]
 
-        if (context_t == "Absatz" | context_t == "Absätze" | context_t == "Satz" | context_t == "Sätze") {
+        if (context_str == "Absatz" | context_str == "Absätze" | context_str == "Satz" | context_str == "Sätze") {
           context_type <- 1
-        } else if (context_t == "Wort" | context_t == "Wörter" | context_t == "Buchstabe" | context_t == "Buchstaben") {
+        } else if (context_str == "Wort" | context_str == "Wörter" | context_str == "Buchstabe" | context_str == "Buchstaben") {
           context_type <- 0
         } else {
-          print('Unknown token context')
+          context_type <- NA
         }
         mycontext(context_type)
         
@@ -186,6 +181,13 @@ server <- function(input, output, session) {
             b <- 2 # before token
             a <- 4 # after token
         }
+        
+        check_df <- all_sentences[1] |>
+          str_sub(1, 1000) |>
+          str_match_all(regex(tp,
+                              dotall = TRUE))
+        validate(need(!is.na(check_df[[1]][2]), message="Can't find the corpus source information. Try checking the 'Quellennachweis' position and select the appropriate option."))
+        
         
         # Splitting the sentences into text parts
         text_parts <- 
@@ -288,7 +290,7 @@ server <- function(input, output, session) {
     
     # Output search phrase
     output$phrase <- renderText({myphrase()})
-    output$allcontext <- renderText({mytokencontext()})
+    output$context_phrase <- renderText({mytokencontext()})
     
     # Output table with unique tokens and their frequencies
     output$unique.tokens <- DT::renderDataTable({
@@ -301,8 +303,11 @@ server <- function(input, output, session) {
     output$plot.tokens <- renderPlot({
         token_count <- mydata() %>%
             count(Token, sort=TRUE)
-        ggplot(token_count, aes(x = Token, y = n)) + 
+        ggplot(token_count, aes(x = reorder(Token, -n), y = n)) +
           geom_bar(stat = "identity") +
+          labs(x = "Tokens",
+               y = "Count",
+               title = "Token frequency") +
           theme_minimal()
     })
 
